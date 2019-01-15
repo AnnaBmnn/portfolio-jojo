@@ -9,7 +9,13 @@ export default new Router({
     {
       path: "/",
       name: "home",
-      component: Home
+      component: Home,
+      props: {
+        cardsArray: [
+          "blue",
+          "orange"
+        ]
+      }
     },
     {
       path: "/about",
