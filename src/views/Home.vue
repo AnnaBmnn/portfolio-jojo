@@ -15,18 +15,19 @@
           <img class="waves__img"  src="../assets/img/home/wave.svg">
         </div>
       </div>
+      <div class="dropALine">
+        <div class="dropALine__txt">
+          Don't be shy
+          <a>drop me a line</a>
+        </div>
+        <img class="dropALine__img" src="../assets/img/home/dropLine.svg">
+    </div>
     </div>
     <div class="aouuuuuards">
       <aouuurd class="aouuuuuards__contour"/>
       <img class="aouuuuuards__hand"  src="../assets/img/home/handok.svg">
     </div>
-    <div class="dropALine">
-      <div class="dropALine__txt">
-        Don't be shy
-        <a>drop me a line</a>
-      </div>
-      <img class="dropALine__img" src="../assets/img/home/dropLine.svg">
-    </div>
+
   </div>
 </template>
 
@@ -54,6 +55,9 @@ export default {
   .cls-2 {
     font-family: "integral cf";
   }
+  @media screen and (max-width: 600px) {
+    height: unset;
+  }
 }
 .container {
   box-sizing: border-box;
@@ -65,17 +69,61 @@ export default {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    padding: 30px 20px 50px 0;
+  }
 }
 .container--right {
   display: flex; 
   flex-direction: column;
   margin-right: 5%;
+
   .card {
     width: 100%;
+  }
+  @media screen and (max-width: 1150px) {
+    margin-right: 0;
+    .card {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 1000px) {
+    .card {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 900px) {
+    .card {
+      width: 100%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .card {
+      width: 90%;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    width: 100%;
+    .card {
+      width: 100%;
+    }
   }
 }
 .logo {
   margin-left: 4%;
+  @media screen and (max-width: 1000px) {
+    margin-left: 0%;    
+  }
+  @media screen and (max-width: 750px) {
+    width: 60px;    
+  }
+  @media screen and (max-width: 600px) {
+    margin-bottom: 30px;
+    width: 90px;    
+
+  }
+
 }
 .aouuuuuards {
   position: absolute;
@@ -95,10 +143,17 @@ export default {
     left: 50%;
     transform: translate3d(-50%, -50%, 1px);
   }
+  @media screen and (max-width: 600px) {
+    top: 30px;
+    right: 30px;
+    left: unset;
+    bottom: unset;
+
+  }
 }
 .dropALine {
   position: absolute;
-  right: 5%;
+  right: 0;
   bottom: 7vh;
   display: flex;
   align-items: center;
@@ -124,12 +179,21 @@ export default {
       background-color: #F54123;
     }
   }
+  @media screen and (max-width: 600px) {
+    position: relative;
+    bottom: unset;
+    left: unset;
+    align-self: flex-end;
+  }
 }
 .waves {
   width: 40%;
   transform: translate3d(-25%, 100%, 1px);
   .waves__img {
     width: 100%;
+  }
+  @media screen and (max-width: 1150px) {
+    display: none;
   }
 }
 

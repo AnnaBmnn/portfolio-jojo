@@ -14,6 +14,9 @@
   color: #2c3e50;
   background-color: #E5E7DE;
 }
+body {
+  overflow-x: hidden;
+}
 body, h1, h2, h3, div, span {
   margin: 0;
   padding: 0;
