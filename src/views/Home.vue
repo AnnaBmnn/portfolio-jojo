@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <div class="container">
-      <img class="logo" src="../assets/logo.svg">
+      <img class="logo" src="../assets/img/logo.svg">
       <card
         :colorClass="cardsArray[0]"
         :isProject="true"
@@ -12,20 +12,20 @@
           :isProject="false"
         />
         <div class="waves">
-          <img class="waves__img"  src="../assets/home/wave.svg">
+          <img class="waves__img"  src="../assets/img/home/wave.svg">
         </div>
       </div>
     </div>
     <div class="aouuuuuards">
-      <img class="aouuuuuards__contour" src="../assets/home/home_amazingContent.svg">
-      <img class="aouuuuuards__hand"  src="../assets/home/handok.svg">
+      <aouuurd class="aouuuuuards__contour"/>
+      <img class="aouuuuuards__hand"  src="../assets/img/home/handok.svg">
     </div>
     <div class="dropALine">
       <div class="dropALine__txt">
         Don't be shy
         <a>drop me a line</a>
       </div>
-      <img class="dropALine__img" src="../assets/home/dropLine.svg">
+      <img class="dropALine__img" src="../assets/img/home/dropLine.svg">
     </div>
   </div>
 </template>
@@ -33,11 +33,13 @@
 <script>
 // @ is an alias to /src
 import Card from "@/components/Card.vue";
+import Aouuurd from "@/components/Aouuurd.vue";
 
 export default {
   name: "home",
   components: {
-    Card
+    Card,
+    Aouuurd
   },
   props: {
     cardsArray: Array
@@ -49,6 +51,9 @@ export default {
 .home {
   height: 100vh;
   width: 100vw;
+  .cls-2 {
+    font-family: "integral cf";
+  }
 }
 .container {
   box-sizing: border-box;
@@ -64,7 +69,7 @@ export default {
 .container--right {
   display: flex; 
   flex-direction: column;
-  margin-right: 10%;
+  margin-right: 5%;
   .card {
     width: 100%;
   }
@@ -82,7 +87,6 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    animation: rotateIt 10s linear infinite;
     will-change: transform;
   }
   .aouuuuuards__hand {
@@ -102,6 +106,10 @@ export default {
   font-style: italic;
   .dropALine__txt {
     margin-right: 30px;
+    font-family: 'integral cf';
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
   }
   a {
     display: block;
@@ -118,16 +126,12 @@ export default {
   }
 }
 .waves {
-  width: 50%;
+  width: 40%;
   transform: translate3d(-25%, 100%, 1px);
   .waves__img {
     width: 100%;
   }
 }
-@keyframes rotateIt {
-  0% { transform: scale(1.3) rotateZ(0deg); }
-  50% { transform: scale(1.3) rotateZ(180deg); }
-  100% { transform: scale(1.3) rotateZ(360deg); }
-}
+
 
 </style>

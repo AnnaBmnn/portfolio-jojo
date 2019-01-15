@@ -1,0 +1,35 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url('~@/assets/fonts/Avenir-BlackOblique.eot');
+    src: local('Avenir Black Oblique'), local('Avenir-BlackOblique'),
+        url('~@/assets/fonts/Avenir-BlackOblique.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/fonts/Avenir-BlackOblique.woff2') format('woff2'),
+        url('~@/assets/fonts/Avenir-BlackOblique.woff') format('woff'),
+        url('~@/assets/fonts/Avenir-BlackOblique.ttf') format('truetype');
+    font-weight: 900;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'integral cf';
+    src: url('~@/assets/fonts/integral-cf-bold.eot');
+    src: local('integral-cf-bold'),
+        url('~@/assets/fonts/integral-cf-bold.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/fonts/integral-cf-bold.woff2') format('woff2'),
+        url('~@/assets/fonts/integral-cf-bold.woff') format('woff'),
+        url('~@/assets/fonts/integral-cf-bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'integral cf';
+    src: url('~@/assets/fonts/integral-cf-medium.eot');
+    src: local('integral-cf-medium'),
+        url('~@/assets/fonts/integral-cf-medium.eot?#iefix') format('embedded-opentype'),
+        url('~@/assets/fonts/integral-cf-medium.woff2') format('woff2'),
+        url('~@/assets/fonts/integral-cf-medium.woff') format('woff'),
+        url('~@/assets/fonts/integral-cf-medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

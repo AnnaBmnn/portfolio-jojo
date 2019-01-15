@@ -12,21 +12,21 @@
     <div class="project__container" v-show="isProject">
       <div class="project__line">
         <div class="project">
-          <img class="project__img" src="../assets/home/vibu.svg"/>
+          <img class="project__img" src="../assets/img/home/vibu.svg"/>
           <span class="project__title">vibu</span>
         </div>
         <div class="project">
-          <img class="project__img" src="../assets/home/tyre.svg"/>
+          <img class="project__img" src="../assets/img/home/tyre.svg"/>
           <span class="project__title">tesla</span>
         </div>
       </div>
       <div class="project__line">
         <div class="project">
-          <img class="project__img" src="../assets/home/ball.svg"/>
+          <img class="project__img" src="../assets/img/home/ball.svg"/>
           <span class="project__title">olympics</span>
         </div>
         <div class="project">
-          <img class="project__img" src="../assets/home/poo.svg"/>
+          <img class="project__img" src="../assets/img/home/poo.svg"/>
           <span class="project__title">stuff</span>
         </div>
       </div>
@@ -88,6 +88,8 @@ export default {
   padding: 20px 0;
   text-transform: uppercase;
   border-bottom: 3px solid #0B3536;
+  font-family: "integral cf", Helvetica, Arial, sans-serif;
+
   &.orange {
     background-color: #F54123;
   }
@@ -112,6 +114,8 @@ export default {
   align-items: center;
   font-style: italic;
   margin-bottom: 50px;
+  font-size: 1.12rem;
+  text-transform: uppercase;
   img {
     margin-bottom: 20px;
   }
@@ -127,7 +131,8 @@ export default {
   font-style: italic;
   font-size: bold;
   text-align: left;
-
+  text-transform: uppercase;
+  font-size: 1.12rem;
 }
 .about__btn {
   color: #F54123;
@@ -135,6 +140,8 @@ export default {
   background-color: white;
   border-radius: 4px;
   padding: 10px 15px;
+  font-family: 'integral cf';
+  font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;

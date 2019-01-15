@@ -5,6 +5,8 @@
 </template>
 
 <style lang="scss">
+@import "~@/assets/scss/fonts.scss";
+@import "~@/assets/scss/animations.scss";
 #app {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
