@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="card"
+    class="card "
     
   >
     <div 
@@ -138,7 +138,6 @@ export default {
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
-  box-shadow: 0 4px 4px rgba(0,0,0,0.25);
   &:after {
     z-index: -1;
     content: "";
