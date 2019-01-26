@@ -45,9 +45,9 @@
 
       </div>
       <button-shadow class="about__btn" linkTo="/" linkContent="back" />
-
     </div>
     <skills />
+    <tiredToSee />
   </div>
 </template>
 
@@ -55,6 +55,7 @@
 import ButtonShadow from "@/components/ButtonShadow.vue";
 import Skills from "@/components/Skills.vue";
 import HoverImage from "@/components/HoverImage.vue";
+import TiredToSee from "@/components/TiredToSee.vue";
 
 // @ is an alias to /src
 
@@ -63,7 +64,8 @@ export default {
   components: {
     ButtonShadow,
     Skills,
-    HoverImage
+    HoverImage,
+    TiredToSee
   },
   props: {
   }
