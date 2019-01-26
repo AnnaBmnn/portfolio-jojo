@@ -38,21 +38,28 @@
           Another NGUYEN in town
         </div>
       </div>      
-      <span class="about__btn">
-        it's true, but
-      </span>
+      <buttonShadow
+        linkTo="about"
+        linkContent="it's true, but"
+      />
+        
     </div>
     
   </div>
 </template>
 
 <script>
+import ButtonShadow from "@/components/ButtonShadow.vue";
+
 export default {
   name: "Card",
   props: {
     colorClass: String,
     sizeClass: String,
     isProject: Boolean
+  },
+  components: {
+    ButtonShadow
   }
 };
 </script>

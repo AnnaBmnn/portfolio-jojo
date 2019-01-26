@@ -7,28 +7,7 @@
 <style lang="scss">
 @import "~@/assets/scss/fonts.scss";
 @import "~@/assets/scss/animations.scss";
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #2c3e50;
-  background-color: #E5E7DE;
-}
-body {
-  overflow-x: hidden;
-}
-body, h1, h2, h3, div, span {
-  margin: 0;
-  padding: 0;
-}
-#nav {
-  padding: 30px;
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-    &.router-link-exact-active {
-      color: #42b983;
-    }
-  }
-}
+@import "~@/assets/scss/logo.scss";
+@import "~@/assets/scss/commun.scss"; 
+
 </style>

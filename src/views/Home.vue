@@ -1,7 +1,9 @@
 <template>
   <div class="home">
     <div class="container">
-      <img class="logo" src="../assets/img/logo.svg">
+      <router-link class="logo"   to="/">
+        <img src="../assets/img/logo.svg">
+      </router-link>
       <card
         :colorClass="cardsArray[0]"
         :isProject="true"
@@ -110,21 +112,7 @@ export default {
     }
   }
 }
-.logo {
-  margin-left: 4%;
-  @media screen and (max-width: 1000px) {
-    margin-left: 0%;    
-  }
-  @media screen and (max-width: 750px) {
-    width: 60px;    
-  }
-  @media screen and (max-width: 600px) {
-    margin-bottom: 30px;
-    width: 90px;    
 
-  }
-
-}
 .aouuuuuards {
   position: absolute;
   left: 5%;
