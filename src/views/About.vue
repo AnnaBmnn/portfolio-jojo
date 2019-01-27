@@ -72,7 +72,11 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-
+.container {
+  @media screen and (max-width: 600px) {
+    padding: 30px 0px 50px 0
+  }
+}
 .about__logo {
   position: absolute;
   left: 4%;
@@ -103,13 +107,27 @@ export default {
   display: flex;
   padding-top: 5vh;
   position: relative;
+  @media screen and (max-width: 900px) {
+    flex-direction: column;
+  }
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    margin-top: 180px;
+  }
 }
 .wassup__txt, .wassup__me {
   width: 50%;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+  }
 }
 
 .wassup__txt {
   padding-top: 10px;
+  @media screen and (max-width: 900px) {
+    padding-top: 40px;
+    margin-bottom: 200px;
+  }
 }
 .wassup__everyWhere {
   width: 50%;
@@ -118,6 +136,13 @@ export default {
   bottom: 0;
   transform: translate3d(-50%, 0, 1px);
   display: flex;
+  @media screen and (max-width: 900px) {
+    width: 100%;
+    left: unset;
+    right: 0;
+    transform: translate3d(0, 0, 1px);
+
+  }
 }
 .everyWhere__socials, .everyWhere__eyes {
   width: 50%;
@@ -126,6 +151,10 @@ export default {
   img {
     width: 63px;
     margin-left: 35%;
+    @media screen and (max-width: 900px) {
+      margin-left: 15%;
+
+    }
   }
   span {
     margin-bottom: 15px;
@@ -158,6 +187,9 @@ export default {
   font-family: 'integral cf';
   font-style: unset;
   font-size: 2.5rem;
+  @media screen and (max-width: 900px) {
+    font-size: 2.25rem;
+  }
 }
 </style>
 

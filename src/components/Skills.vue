@@ -71,15 +71,24 @@ export default {
   }
 };
 </script>
-<style scoped>
+<style lang="scss" scoped>
 .skills {
   color: white;
   background-color:  #F54123;
+  .container {
+    @media screen and (max-width: 600px) {
+        padding: 30px 0px 50px 0!important;
+    }
+  }
 }
 .skills__container {
     position: relative;
-  width: 66%;
-  margin: 0 auto;
+    width: 66%;
+    margin: 0 auto;
+    @media screen and (max-width: 750px) {
+        width: 100%;
+
+    }
 }
 
 .skills__goodVibes {
@@ -89,6 +98,11 @@ export default {
     transform: translate3d(50%, -30%, 1px);
     width: 110px;
     height: 110px;
+    @media screen and (max-width: 750px) {
+        transform: translate3d(10%, 0%, 1px);
+        width: 90px;
+        height: 90px;
+    }
 }
 .skills__goodVibesRound, .skills__goodVibesSmile {
     position: absolute;
@@ -105,22 +119,37 @@ export default {
     top: 50%;
     left: 50%;
     transform: translate3d(-50%, -50%, 1px);
+    @media screen and (max-width: 750px) {
+        width: 40px;
+        height: 40px;
+    }
 }
 .skills__title {
   font-family: 'integral cf';
   font-size: 2.5rem;
+    @media screen and (max-width: 900px) {
+        font-size: 2.25rem;
+    }
 
 }
 .skills__cards {
     margin-top: 8vh;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 950px) {
+        flex-wrap: wrap;
+    }
 }
 .skills__card {
     border: 2px solid white;
     border-radius: 5px;
     flex-basis: 22.5%;
     text-align: center;
+    @media screen and (max-width: 950px) {
+        flex-basis: 48%;
+        margin-bottom: 30px;
+        flex-wrap: no-wrap;
+    }
 }
 .skills__img {
     padding: 16px 0;

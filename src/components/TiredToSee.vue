@@ -12,6 +12,13 @@
                     <img class="game__poigne--2" src="../assets/img/about/poigne2.svg">
                 </div>
             </div>
+            <div class="tiredToSee__button--mobile">
+                <div class="tiredToSee__buttonContainer">
+                    <img class="tiredToSee__buttonImg" src="../assets/img/about/buttonAbout.svg">
+                    <img class="tiredToSee__holeImg" src="../assets/img/about/hole.svg">
+                </div>
+                <div class="tiredToSee__buttonTxt" >PUSH TO PLAY</div>
+            </div>
             <div class="tiredToSee__form tiredToSee__form--1">
                 <img src="../assets/img/about/tired--1.svg">
                 <span  class="tiredToSee__formText">
@@ -36,7 +43,7 @@
                 </span>
             </div>
         </div>
-        <div class="tiredToSee__luv">Coded with <br> luv by <hover-image word="Anna" /></div>
+        <div class="tiredToSee__luv"><div>Coded with</div><div> luv by <hover-image word="Anna" /></div></div>
 
     </section>
 </template>
@@ -66,17 +73,26 @@ export default {
     left: 0;
     width: 100px;
     transform: translate3d(0, -10px, 1px);
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 }
 .tiredToSee__container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media screen and (max-width: 600px) {
+        padding-bottom: 0;
+    }
 }
 .tiredToSee__title {
     font-family: 'integral cf';
     font-style: unset;
     font-size: 2.5rem;
     margin-bottom: 6vh;
+    @media screen and (max-width: 900px) {
+        font-size: 2.25rem;
+    }
 }
 .tiredToSee__form {
     position: absolute;
@@ -86,6 +102,9 @@ export default {
         position: absolute;
         top: 0;
         left: 0;
+    }
+    @media screen and (max-width: 950px) {
+        display: none;
     }
 }
 .tiredToSee__form--1 {
@@ -99,6 +118,12 @@ export default {
     }
     .tiredToSee__formText--2 {
         font-size: 20.5px;
+    }
+
+    @media screen and (max-width: 1050px) {
+        right: 2%;
+        top: 70%;
+
     }
 }
 .tiredToSee__form--2 {
@@ -114,7 +139,9 @@ export default {
     }
     .tiredToSee__formText {
         transform: translate3d(-50%, -50%, 1px) rotateZ(15deg);
-
+    }
+    @media screen and (max-width: 1050px) {
+        right: 4%;
     }
 }
 .tiredToSee__form--3 {
@@ -132,6 +159,10 @@ export default {
     .tiredToSee__formText {
         transform: translate3d(-50%, -50%, 1px) rotateZ(15deg);
 
+    }
+    @media screen and (max-width: 1050px) {
+        right: 2%;
+        top: 57%;
     }
 }
 .tiredToSee__formText {
@@ -151,6 +182,19 @@ export default {
     position: absolute;
     bottom: 8vh;
     left: 8%;
+    @media screen and (max-width: 600px) {
+        bottom: 0px;
+        left: unset;
+        color: white;
+        right: 0;
+        width: 100%;
+        padding: 10px 5% 5px 0;
+        background-color: #0B3536;
+        text-align: right;
+        div {
+            display: inline-block;
+        }
+    }
 }
 .game {
     width: 33%;
@@ -161,6 +205,15 @@ export default {
     background-color: #F1F1F1;
     display: flex;
     justify-content: space-between;
+    @media screen and (max-width: 950px) {
+        width: 50%;
+    }
+    @media screen and (max-width: 750px) {
+        width: 70%;
+    }
+    @media screen and (max-width: 600px) {
+        width: 90%;
+    }
 
     &:after {
         content: '';
@@ -174,12 +227,51 @@ export default {
         background-color: #0B3536;
     }
 }
+.tiredToSee__button--mobile {
+    margin-top: 60px;
+
+    display: none;
+    @media screen and (max-width: 600px) {
+        display: block;
+    }
+}
+.tiredToSee__buttonTxt {
+    margin-top: 15px;
+}
+.tiredToSee__buttonImg {
+    top: 0;
+    left: 50%;
+    transform: translate3d(-50%, 0, 1px);
+    transition: 0.3s ease-in transform;
+    z-index: 2;
+    &:hover {
+        transform: translate3d(-50%, 3px, 1px);
+    }
+}
+.tiredToSee__holeImg {
+    width: 113px;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+
+}
+.tiredToSee__buttonContainer {
+    position: relative;
+    width: 113px;
+    height: 35px;
+    img {
+        position: absolute;
+    }
+}
 .game__poigne--1 {
     position: absolute;
     left: 100%;
     top: 50%;
     transform: translate3d(-3px, -50%, 1px);
     z-index: -1;
+    @media screen and (max-width: 600px) {
+        display: none;
+    }
 }
 .game__poigne--2 {
     position: absolute;
@@ -191,7 +283,9 @@ export default {
     transform-origin: bottom;
     &:hover {
         transform: translate3d(-3px, -100%, 1px) rotateX(15deg);
-
+    }
+    @media screen and (max-width: 600px) {
+        display: none;
     }
 }
 .game__card {
