@@ -12,22 +12,30 @@
     <div class="project__container" v-show="isProject">
       <div class="project__line">
         <div class="project">
-          <img class="project__img" src="../assets/img/home/vibu.svg"/>
-          <span class="project__title">vibu</span>
+          <router-link class="project__link" to="/project/vibu">
+            <img class="project__img" src="../assets/img/home/vibu.svg"/>
+            <span class="project__title">vibu</span>
+          </router-link>
         </div>
         <div class="project">
-          <img class="project__img" src="../assets/img/home/tyre.svg"/>
-          <span class="project__title">tesla</span>
+          <router-link class="project__link" to="/project/tesla">
+            <img class="project__img" src="../assets/img/home/tyre.svg"/>
+            <span class="project__title">tesla</span>
+          </router-link>
         </div>
       </div>
       <div class="project__line">
         <div class="project">
-          <img class="project__img" src="../assets/img/home/ball.svg"/>
-          <span class="project__title">olympics</span>
+          <router-link class="project__link" to="/project/tesla">
+            <img class="project__img" src="../assets/img/home/ball.svg"/>
+            <span class="project__title">olympics</span>
+          </router-link>          
         </div>
         <div class="project">
-          <img class="project__img" src="../assets/img/home/poo.svg"/>
-          <span class="project__title">stuff</span>
+          <router-link class="project__link" to="/project/tesla">
+            <img class="project__img" src="../assets/img/home/poo.svg"/>
+            <span class="project__title">stuff</span>
+          </router-link>                    
         </div>
       </div>
     </div>
@@ -184,6 +192,13 @@ export default {
       width: 60px;
       height: 60px;
     }
+  }
+}
+.project__link {
+  color: inherit;
+  text-align: center;
+  span {
+    display: block;
   }
 }
 .about__container {
