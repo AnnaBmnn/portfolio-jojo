@@ -95,7 +95,7 @@ export default {
   width: 58.5%;
   margin: 0 auto;
   border: 2px solid #0B3536;
-  border-radius: 4px;
+  border-radius: 6px;
   background-color: white;
   &:after {
     content: "";
@@ -105,7 +105,7 @@ export default {
     left: 20px;
     height: 100%;
     width: 100%;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: #0B3536;
   }
   @media screen and (max-width: 870px) {

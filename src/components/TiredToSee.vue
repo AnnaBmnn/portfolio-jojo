@@ -2,7 +2,7 @@
     <section class="tiredToSee">
         <img class="tiredToSee__wave" src="../assets/img/about/wave.svg">
         <div class="container tiredToSee__container">
-            <h2 class="tiredToSee__title">Tired to see ?</h2>
+            <h2 class="tiredToSee__title">Are you tired to see ?</h2>
             <div class="game">
                 <div class="game__card"></div>
                 <div class="game__card"></div>
@@ -43,7 +43,7 @@
                 </span>
             </div>
         </div>
-        <div class="tiredToSee__luv"><div>Coded with</div><div> luv by <hover-image word="Anna" /></div></div>
+        <div class="tiredToSee__luv"><div>Coded with &nbsp</div><div>luv by <hover-image word="Anna" /></div></div>
 
     </section>
 </template>
@@ -71,7 +71,6 @@ export default {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100px;
     transform: translate3d(0, -10px, 1px);
     @media screen and (max-width: 600px) {
         display: none;
@@ -179,6 +178,7 @@ export default {
     }
 }
 .tiredToSee__luv {
+    font-size: 0.75rem;
     position: absolute;
     bottom: 8vh;
     left: 8%;
@@ -198,7 +198,7 @@ export default {
 }
 .game {
     width: 33%;
-    border-radius: 5px;
+    border-radius: 6px;
     position: relative;
     padding: 25px;
     border: 3px solid #0B3536;
@@ -223,7 +223,7 @@ export default {
         width: 100%;
         height: 100%;
         z-index: -2;
-        border-radius: 5px;
+        border-radius: 6px;
         background-color: #0B3536;
     }
 }
@@ -291,7 +291,7 @@ export default {
 .game__card {
     width: 30%;
     height: 130px;
-    border-radius: 5px;
+    border-radius: 6px;
     background-color: white;
     border: 3px solid #0B3536;
 

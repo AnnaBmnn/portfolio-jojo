@@ -24,8 +24,8 @@ $orange: #F54123;
   color: $orange;
   border: 3px solid $orange;
   background-color: white;
-  border-radius: 4px;
-  padding: 10px 15px;
+  border-radius: 6px;
+  padding: 15px 15px;
   font-family: 'integral cf';
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -41,7 +41,7 @@ $orange: #F54123;
     left: 5px;
     top: 5px;
     background-color: #F54123;
-    border-radius: 4px;
+    border-radius: 6px;
   }
 }
 

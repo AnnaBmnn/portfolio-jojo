@@ -37,7 +37,7 @@
           </div>
           <ul class="everyWhere__socials">
             <span>I’M EVERYWHERE</span>
-            <li><a href="dribble.com">Dribble</a></li>
+            <li><a href="dribbble.com">Dribbble</a></li>
             <li><a href="behance.com">Behance</a></li>
             <li><a href="linkedin.com">Linkedin</a></li>
           </ul>
@@ -95,10 +95,10 @@ export default {
   }
 }
 .about__btn {
-  position: absolute;
+  position: fixed;
   right: 4%;
   top: 10vh;
-
+  padding: 12px 12px;
 }
 
 .wassup__wrapper {
@@ -123,6 +123,8 @@ export default {
 }
 
 .wassup__txt {
+  font-size: 1.125rem;
+  line-height: 110%;
   padding-top: 10px;
   @media screen and (max-width: 900px) {
     padding-top: 40px;
@@ -172,7 +174,8 @@ export default {
       content: '';
       position: absolute;
       width: 100%;
-      height: 2px;
+      height: 3px;
+      border-radius: 3px;
       top: 100%;
       left: 0;
       background-color: #F54123;
@@ -181,6 +184,7 @@ export default {
 }
 .everyWhere__socials {
   margin-top: 20px;
+  margin-bottom: 0;
   padding-left: 0;
 }
 .wassup__title {

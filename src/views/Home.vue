@@ -129,7 +129,7 @@ export default {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 1px);
+    transform: translate3d(-39%, -49%, 1px);
   }
   @media screen and (max-width: 600px) {
     top: 30px;
@@ -159,12 +159,13 @@ export default {
     position: relative;
     &:after {
       content: "";
-      height: 1px;
+      height: 3px;
       width: 100%;
       position: absolute;
-      top: 105%;
+      top: 125%;
       left: 0;
       background-color: #F54123;
+      border-radius: 8px;
     }
   }
   @media screen and (max-width: 600px) {

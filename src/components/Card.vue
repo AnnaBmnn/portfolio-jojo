@@ -75,7 +75,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .card {
-  border-radius: 4px;
+  border-radius: 6px;
   border: 3px solid #0B3536;
   position: relative;
   width: 35%;
@@ -86,10 +86,10 @@ export default {
     position: absolute;
     width: 100%;
     height: 100%;
-    border-radius: 4px;
+    border-radius: 6px;
     background-color: #0B3536;
     left: 24px;
-    top: 35px;
+    top: 24px;
     z-index: -1;
   }
   &:last-child{
@@ -113,7 +113,7 @@ export default {
   font-size: 2.75rem;
   text-align: center;
   font-weight: bold;
-  padding: 20px 0;
+  padding: 20px 0 28px;
   text-transform: uppercase;
   border-bottom: 3px solid #0B3536;
   font-family: "integral cf", Helvetica, Arial, sans-serif;
@@ -230,8 +230,8 @@ export default {
   color: #F54123;
   border: 3px solid #F54123;
   background-color: white;
-  border-radius: 4px;
-  padding: 10px 15px;
+  border-radius: 6px;
+  padding: 15px 15px;
   font-family: 'integral cf';
   font-size: 0.875rem;
   text-transform: uppercase;
@@ -247,7 +247,7 @@ export default {
     left: 5px;
     top: 5px;
     background-color: #F54123;
-    border-radius: 4px;
+    border-radius: 6px;
   }
 }
 

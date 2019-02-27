@@ -77,7 +77,7 @@ export default {
   background-color:  #F54123;
   .container {
     @media screen and (max-width: 600px) {
-        padding: 30px 0px 50px 0!important;
+        padding: 50px 0px 50px 0!important;
     }
   }
 }
@@ -112,7 +112,7 @@ export default {
     height: 100%;
     top: 0;
     left: 0;
-    animation: rotateIt 10s linear infinite;
+    animation: rotateIt 12s linear infinite;
 
 }
 .skills__goodVibesSmile {
@@ -142,7 +142,7 @@ export default {
 }
 .skills__card {
     border: 2px solid white;
-    border-radius: 5px;
+    border-radius: 4px;
     flex-basis: 22.5%;
     text-align: center;
     @media screen and (max-width: 950px) {

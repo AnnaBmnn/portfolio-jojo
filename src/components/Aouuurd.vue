@@ -14,7 +14,7 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .aouuurd {
-  animation: rotateIt 10s linear infinite;
+  animation: rotateIt 12s linear infinite;
 }
 .cls-1,.cls-2{
   font-size:9.8px;

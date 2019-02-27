@@ -29,10 +29,11 @@ export default {
     content: '';
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 3px;
     top: 100%;
     left: 0;
     background-color: #F54123;
+    border-radius: 3px;
   }
   .hoverImage__myImg {
     display: none;
@@ -40,7 +41,7 @@ export default {
     top: 130%;
     left: 0;
     transform: translate3d(-50%, 0, 1px);
-    border-radius: 5px;
+    border-radius: 6px;
     border: 3px solid #F54123;
     height: 220px;
 
@@ -49,7 +50,7 @@ export default {
       position: absolute;
       width: 100%;
       height: 100%;
-      border-radius: 5px;
+      border-radius: 6px;
       background-color: #F54123;
       left: 16px;
       top: 16px;
@@ -58,7 +59,7 @@ export default {
 
     img {
       border: 10px solid white;
-      border-radius: 5px;
+      border-radius: 6px;
       height: 200px;
       width: auto;
     }
