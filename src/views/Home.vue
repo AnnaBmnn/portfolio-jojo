@@ -54,6 +54,8 @@ export default {
 .home {
   height: 100vh;
   width: 100vw;
+  background-color: #E5E7DE;
+
   .cls-2 {
     font-family: "integral cf";
   }
@@ -67,10 +69,11 @@ export default {
   z-index: 1;
   width: 90%;
   margin: 0 auto;
-  padding: 10vh 0;
+  padding: 10vh 0 ;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
+  box-sizing: border-box;
   @media screen and (max-width: 600px) {
     flex-direction: column;
     padding: 30px 20px 50px 0;
@@ -119,6 +122,7 @@ export default {
   bottom: 5vh;
   height: 117px;
   width: 117px;
+  z-index: 5;
   .aouuuuuards__contour {
     position: absolute;
     top: 0;
@@ -187,4 +191,12 @@ export default {
 }
 
 
+</style>
+<style lang="scss" scoped>
+.container {
+  padding: 10vh 0 0;
+  background-color: #E5E7DE;
+  height: 100vh;
+
+}
 </style>
