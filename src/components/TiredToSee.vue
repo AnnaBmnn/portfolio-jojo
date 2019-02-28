@@ -43,7 +43,7 @@
                 </span>
             </div>
         </div>
-        <div class="tiredToSee__luv"><div>Coded with &nbsp</div><div>luv by <hover-image word="Anna" /></div></div>
+        <div class="tiredToSee__luv"><div>Coded with &nbsp</div><div>luv by <hover-image word="Anna" imgUrl="../assets/gif/anna.gif"  /></div></div>
 
     </section>
 </template>
@@ -182,6 +182,10 @@ export default {
     position: absolute;
     bottom: 8vh;
     left: 8%;
+    .hoverImage__word .hoverImage__myImg {
+        bottom: 100%;
+        top: unset;
+    }
     @media screen and (max-width: 600px) {
         bottom: 0px;
         left: unset;
@@ -195,6 +199,7 @@ export default {
             display: inline-block;
         }
     }
+
 }
 .game {
     width: 33%;

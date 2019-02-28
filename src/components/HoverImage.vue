@@ -2,7 +2,7 @@
   <div class="hoverImage__word">
     {{word}}
     <div class="hoverImage__myImg">
-      <img src="~@/assets/img/about/dog.png">
+      <img :src="imgUrl">
     </div>
   </div>
 </template>
@@ -13,7 +13,7 @@ export default {
   name: "HoverImage",
   props: {
     word: String,
-    img: String
+    imgUrl: String
   }
 };
 </script>
@@ -44,6 +44,7 @@ export default {
     border-radius: 6px;
     border: 3px solid #F54123;
     height: 220px;
+    z-index: 3;
 
     &:after {
       content: '';

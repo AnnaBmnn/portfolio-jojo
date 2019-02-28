@@ -17,9 +17,9 @@
             and a graphic designer. 
             <br>
             <br>
-            I’m studying at <hover-image word="HETIC"/> in Paris, a web school 
+            I’m studying at <hover-image word="HETIC" imgUrl="https://media.giphy.com/media/1IDqrFySO6y1a/giphy.gif" /> in Paris, a web school 
             where I discovered UI and UX. In this way, I 
-            worked at <hover-image word="Dogstudio"/> during my last summer internship.
+            worked at <hover-image word="Dogstudio" imgUrl="https://66.media.tumblr.com/e1f66daca1a4dd8fd156ef3aa499d34b/tumblr_inline_msn9qyKvTO1qz4rgp.gif"/> during my last summer internship.
             <br>
             <br>
             In the same time I started to take an interest in a more global 
@@ -28,7 +28,7 @@
             So I decided to learn and experiment on my side. 
             <br>
             <br>
-            I’m looking for a 6 months internship in a <hover-image word="cool place"/>
+            I’m looking for a 6 months internship in a <hover-image word="cool place" imgUrl="https://media.giphy.com/media/N3SrQHIh87mJq/giphy.gif" />
             where I can discover things and improve my skills in this areas. 
         </div>
         <div class="wassup__everyWhere">
@@ -44,7 +44,10 @@
         </div>
 
       </div>
-      <button-shadow class="about__btn" linkTo="/" linkContent="back" />
+      <div  class="about__btnContainer" >
+        <button-shadow class="about__btn" linkTo="/" linkContent="back" />
+      </div>
+      
     </div>
     <skills />
     <tiredToSee />
@@ -94,10 +97,15 @@ export default {
     width: 90px;    
   }
 }
-.about__btn {
+.about__btnContainer {
   position: fixed;
+
   right: 4%;
   top: 10vh;
+}
+.about__btn {
+  display: inline-block;
+  position: relative;
   padding: 12px 12px;
 }
 

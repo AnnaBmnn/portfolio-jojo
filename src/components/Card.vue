@@ -26,13 +26,13 @@
       </div>
       <div class="project__line">
         <div class="project">
-          <router-link class="project__link" to="/project/tesla">
+          <router-link class="project__link" to="/project/olympics">
             <img class="project__img" src="../assets/img/home/ball.svg"/>
             <span class="project__title">olympics</span>
           </router-link>          
         </div>
         <div class="project">
-          <router-link class="project__link" to="/project/tesla">
+          <router-link class="project__link" to="/project/stuff">
             <img class="project__img" src="../assets/img/home/poo.svg"/>
             <span class="project__title">stuff</span>
           </router-link>                    

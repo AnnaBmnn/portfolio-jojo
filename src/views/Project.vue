@@ -52,7 +52,7 @@ export default {
   data: function(){
     return {
       projectInfos: projects.find((project)=>{
-        return project.name == "vibu";
+        return project.name == this.$route.params.slug;
     })
     }
   }
