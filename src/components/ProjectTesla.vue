@@ -42,10 +42,38 @@ export default {
   display: flex;
   justify-content: space-between;
   margin: 20vh 0;
+  align-items: flex-start;
 
   img {
     width: 30%;
     height: auto;
+  }
+  @media screen and (max-width: 1100px) {
+    flex-wrap: wrap;
+    justify-content: center;
+
+    img {
+      &:nth-child(2){
+        margin-bottom: 20vh;
+        margin-left: 10vw;
+      }
+      width: 40%;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    flex-direction: column;
+    align-items: center;
+
+    img {
+      &:nth-child(2){
+        margin-left: 0;
+
+      }
+      max-width: 100%;
+      width: auto;
+
+      margin: 0 0 20vh 0;
+    }
   }
 }
 .project__containerImgWatch {
@@ -55,6 +83,18 @@ export default {
   .project__last {
     margin-left: 10vw;
   }
+  @media screen and (max-width: 600px) {
+    .project__last {
+      margin-left: 0vw;
+    }
+    flex-direction: column;
+    align-items: center;
+    img {
+      max-width: 100%;
+      width: auto;
+      margin: 0 0 20vh 0;
 
+    }
+  }
 }
 </style>
