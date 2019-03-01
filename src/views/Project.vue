@@ -39,7 +39,9 @@
     <div class="waves">
       <img class="waves__img"  src="../assets/img/home/wave.svg">
     </div>
-    <project-tesla :v-if="this.projectInfos.name == 'tesla'" :imgs="this.projectInfos.imgs" />
+    <project-tesla v-if="this.projectInfos.name === 'tesla'" :imgs="this.projectInfos.imgs" />
+    <project-vibu v-else-if="this.projectInfos.name === 'vibu'" :imgs="this.projectInfos.imgs" />
+    <project-vibu v-else-if="this.projectInfos.name === 'olympics'" :imgs="this.projectInfos.imgs" />
   </div>
 </template>
 
@@ -47,13 +49,17 @@
 import { projects } from "../datas/projects.js";
 import ButtonShadow from "@/components/ButtonShadow.vue";
 import ProjectTesla from "@/components/ProjectTesla.vue";
+import ProjectVibu from "@/components/ProjectVibu.vue";
+import ProjectOlympics from "@/components/ProjectOlympics.vue";
 
 
 export default {
   name: "project",
   components: {
     ButtonShadow,
-    ProjectTesla
+    ProjectTesla,
+    ProjectVibu,
+    ProjectOlympics
   },
   data: function(){
     return {
