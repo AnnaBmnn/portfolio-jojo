@@ -41,7 +41,8 @@
     </div>
     <project-tesla v-if="this.projectInfos.name === 'tesla'" :imgs="this.projectInfos.imgs" />
     <project-vibu v-else-if="this.projectInfos.name === 'vibu'" :imgs="this.projectInfos.imgs" />
-    <project-vibu v-else-if="this.projectInfos.name === 'olympics'" :imgs="this.projectInfos.imgs" />
+    <project-olympics v-else-if="this.projectInfos.name === 'olympics'" :imgs="this.projectInfos.imgs" />
+    <next-project :index="(this.projectInfos.index)%4"></next-project>
   </div>
 </template>
 
@@ -51,6 +52,7 @@ import ButtonShadow from "@/components/ButtonShadow.vue";
 import ProjectTesla from "@/components/ProjectTesla.vue";
 import ProjectVibu from "@/components/ProjectVibu.vue";
 import ProjectOlympics from "@/components/ProjectOlympics.vue";
+import NextProject from "@/components/NextProject.vue";
 
 
 export default {
@@ -59,7 +61,8 @@ export default {
     ButtonShadow,
     ProjectTesla,
     ProjectVibu,
-    ProjectOlympics
+    ProjectOlympics,
+    NextProject
   },
   data: function(){
     return {

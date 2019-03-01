@@ -38,5 +38,8 @@ export default new Router({
       component: () =>
         import(/* webpackChunkName: "project" */ "./views/Project.vue")
     }
-  ]
+  ],
+  scrollBehavior (to, from, savedPosition) {
+    return { x: 0, y: 0 }
+  },
 });

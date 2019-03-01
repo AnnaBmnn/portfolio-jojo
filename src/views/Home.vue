@@ -22,7 +22,7 @@
           Don't be shy
           <a>drop me a line</a>
         </div>
-        <img class="dropALine__img" src="../assets/img/home/dropLine.svg">
+        <img class="dropALine__img" src="../assets/img/home/home_contact.svg">
     </div>
     </div>
     <div class="aouuuuuards">

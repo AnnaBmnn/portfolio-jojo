@@ -45,10 +45,10 @@ export default {
   align-items: flex-start;
   img {
     &:nth-child(1){
-      margin-right: 5vw;
+      margin-right: 2.5vw;
     }
     &:nth-child(2){
-      margin-left: 5vw;
+      margin-left: 2.5vw;
     }
   }
   @media screen and (max-width: 1100px) {
@@ -83,7 +83,7 @@ export default {
     img {
       &:nth-child(2){
         margin-bottom: 20vh;
-        margin-left: 10vw;
+        margin-left: 5vw;
       }
       width: 40%;
     }

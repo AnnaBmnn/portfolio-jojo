@@ -24,9 +24,9 @@
                     :key="skill.name"
                 >
                     <div class="skills__img">
-                        <!-- <img :src="skill.img"> -->
+                        <img :src="skill.img">
 
-                        <img src="~@/assets/img/about/illustration.svg">
+                        <!-- <img src="~@/assets/img/about/illustration.svg"> -->
                     </div>
                     
                     <div class="skills__name">
@@ -50,19 +50,19 @@ export default {
         skills: [
             {
                 name: "illustration",
-                img: "~@/about/illustration.svg"
+                img: "../assets/about/about_illustration.svg"
             },
             {
                 name: "motion",
-                img: "~@/public/about/motion.svg"
+                img: "../assets/about/about_motion2.svg"
             },
             {
                 name: "user interface",
-                img: "public/about/ui.svg"
+                img: "../assets/about/about_ui.svg"
             },
             {
                 name: "fast drinking",
-                img: "./about/about/drinking.svg"
+                img: "../assets/about/about_drinking.svg"
             }
         ]
     }
@@ -153,6 +153,14 @@ export default {
 }
 .skills__img {
     padding: 16px 0;
+    height: 113px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-height: 75px;
+    }
 }
 .skills__name {
     border-top: 2px solid white;

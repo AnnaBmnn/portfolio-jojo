@@ -1,5 +1,6 @@
 const projects = [
     {
+        index: 1,
         name: "vibu",
         deviceType: "mobile",
         illus: "../assets/home/vibu.svg",
@@ -18,6 +19,7 @@ const projects = [
         ]
     },
     {
+        index: 2,
         name: "tesla",
         deviceType: "desktop",
         illus: "../assets/home/home_tesla.svg",
@@ -38,6 +40,7 @@ const projects = [
         ]
     },
     {
+        index: 3,
         name: "olympics",
         deviceType: "mobile",
         illus: "../assets/home/home_olympics.svg",
@@ -57,6 +60,7 @@ const projects = [
         ]
     },
     {
+        index: 4,
         name: "stuff",
         deviceType: "mobile",
         illus: "../assets/home/home_stuffs.svg",

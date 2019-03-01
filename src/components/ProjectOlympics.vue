@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="proj">
     <div class="projectOlympics">
       <div class="projectOlympics__two">
         <img :src="imgs[0]">
@@ -15,9 +15,10 @@
         <img :src="imgs[6]">
       </div>
     </div>
-    <img :src="imgs[7]">
+    <div class="projectOlympics__fullCOntainer">
+      <img class="projectOlympics__full" :src="imgs[7]">
+    </div>
   </div>
-
 </template>
 
 <script>
@@ -32,6 +33,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+
 .projectOlympics {
   width: 72%;
   margin: 0 auto;
@@ -48,10 +50,10 @@ export default {
   align-items: flex-start;
   img {
     &:nth-child(1){
-      margin-right: 5vw;
+      margin-right: 2.5vw;
     }
     &:nth-child(2){
-      margin-left: 5vw;
+      margin-left: 2.5vw;
     }
   }
   @media screen and (max-width: 1100px) {
@@ -74,6 +76,16 @@ export default {
     }
   }
 }
+.projectOlympics__fullCOntainer {
+  background-color: white;
+  margin-bottom: 20vh;
+  overflow: hidden;
+}
+.projectOlympics__full {
+  width: 100%;
+  height: auto;
+  transform: translateY(20px);
+}
 .projectOlympics__three {
   display: flex;
   justify-content: space-between;
@@ -86,7 +98,7 @@ export default {
     img {
       &:nth-child(2){
         margin-bottom: 20vh;
-        margin-left: 10vw;
+        margin-left: 5vw;
       }
       width: 40%;
     }
