@@ -5,18 +5,6 @@
             <h2 class="skills__title">
                 awesome <br> skillz
             </h2>
-            <div class="skills__goodVibes">
-                <img 
-                    class="skills__goodVibesSmile" 
-                    src="~@/assets/img/about/smile.svg"
-                >
-                
-                <img
-                    class="skills__goodVibesRound" 
-                    src="~@/assets/img/about/goodvibes.svg"
-                >
-
-            </div>
             <div class="skills__cards">
                 <div 
                     class="skills__card"
@@ -26,7 +14,6 @@
                     <div class="skills__img">
                         <img :src="skill.img">
 
-                        <!-- <img src="~@/assets/img/about/illustration.svg"> -->
                     </div>
                     
                     <div class="skills__name">
@@ -34,6 +21,7 @@
                     </div>
                 </div>
             </div>
+            <img class="skills__waves" src="../assets/img/about/wave.svg">
         </div>
       </div>
     </section>
@@ -91,37 +79,18 @@ export default {
     }
 }
 
-.skills__goodVibes {
+.skills__waves {
     position: absolute;
     right: 0;
     top: 0;
-    transform: translate3d(50%, -30%, 1px);
-    width: 110px;
-    height: 110px;
+    transform: translate3d(25%, 0%, 1px);
+    @media screen and (max-width: 1400px) {
+        width: 200px;
+    }
     @media screen and (max-width: 750px) {
         transform: translate3d(10%, 0%, 1px);
         width: 90px;
         height: 90px;
-    }
-}
-.skills__goodVibesRound, .skills__goodVibesSmile {
-    position: absolute;
-}
-.skills__goodVibesRound {
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    animation: rotateIt 12s linear infinite;
-
-}
-.skills__goodVibesSmile {
-    top: 50%;
-    left: 50%;
-    transform: translate3d(-50%, -50%, 1px);
-    @media screen and (max-width: 750px) {
-        width: 40px;
-        height: 40px;
     }
 }
 .skills__title {
@@ -152,8 +121,7 @@ export default {
     }
 }
 .skills__img {
-    padding: 16px 0;
-    height: 113px;
+    height: 150px;
     box-sizing: border-box;
     display: flex;
     align-items: center;

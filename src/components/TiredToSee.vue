@@ -1,6 +1,5 @@
 <template>
     <section class="tiredToSee">
-        <img class="tiredToSee__wave" src="../assets/img/about/wave.svg">
         <div class="container tiredToSee__container">
             <h2 class="tiredToSee__title">Are you tired to see ?</h2>
             <div class="game">
@@ -22,7 +21,7 @@
             <div class="tiredToSee__form tiredToSee__form--1">
                 <img src="../assets/img/about/tired--1.svg">
                 <span  class="tiredToSee__formText">
-                    <span>A 100%</span>
+                    <span class="tiredToSee__formText--3">A 100%</span>
                     <span class="tiredToSee__formText--1">winning</span>
                     <span class="tiredToSee__formText--2">game</span>
                 </span>
@@ -40,6 +39,13 @@
                     <span class="tiredToSee__formText--1">very</span>
                     <span class="tiredToSee__formText--1">cool</span>
                     <span class="tiredToSee__formText--2">prize</span>
+                </span>
+            </div>
+            <div class="tiredToSee__form tiredToSee__form--4">
+                <img src="../assets/img/about/tired--4.svg">
+                <span  class="tiredToSee__formText">
+                    <span class="tiredToSee__formText--1">approved</span>
+                    <span class="tiredToSee__formText--2">by rockstar</span>
                 </span>
             </div>
         </div>
@@ -67,15 +73,7 @@ export default {
     position: relative;
     padding-bottom: 18vh;
 }
-.tiredToSee__wave {
-    position: absolute;
-    top: 0;
-    left: 0;
-    transform: translate3d(0, -10px, 1px);
-    @media screen and (max-width: 600px) {
-        display: none;
-    }
-}
+
 .tiredToSee__container {
     display: flex;
     flex-direction: column;
@@ -88,7 +86,7 @@ export default {
     font-family: 'integral cf';
     font-style: unset;
     font-size: 2.5rem;
-    margin-bottom: 6vh;
+    margin-bottom: 13vh;
     @media screen and (max-width: 900px) {
         font-size: 2.25rem;
     }
@@ -107,16 +105,23 @@ export default {
     }
 }
 .tiredToSee__form--1 {
-    height: 120px;
-    width: 150px;
-    right: 5%;
-    top: 50%;
+    height: 160px;
+    width: 180px;
+    left: 5%;
+    top: 20%;
     z-index: 3;
+    .tiredToSee__formText {
+        transform: translate3d(-50%, -73%, 1px) rotateZ(-15deg);        
+    }
+    .tiredToSee__formText--3 {
+        font-size: 20.5px;
+    }
     .tiredToSee__formText--1 {
-        font-size: 13.5px;
+        font-size: 18px;
     }
     .tiredToSee__formText--2 {
-        font-size: 20.5px;
+        font-size: 27.5px;
+        line-height: 0.7;
     }
 
     @media screen and (max-width: 1050px) {
@@ -126,18 +131,18 @@ export default {
     }
 }
 .tiredToSee__form--2 {
-    height: 160px;
-    width: 160px;
-    right: 8%;
+    height: 220px;
+    width: 220px;
+    right: 3%;
     top: 10%;
     .tiredToSee__formText--1 {
-        font-size: 10.5px;
+        font-size: 14px;
     }
     .tiredToSee__formText--2 {
-        font-size: 15.5px;
+        font-size: 21px;
     }
     .tiredToSee__formText {
-        transform: translate3d(-50%, -50%, 1px) rotateZ(15deg);
+        transform: translate3d(-50%, -60%, 1px) rotateZ(20deg);
     }
     @media screen and (max-width: 1050px) {
         right: 4%;
@@ -146,8 +151,8 @@ export default {
 .tiredToSee__form--3 {
     height: 90px;
     width: 97px;
-    right: 4%;
-    top: 37%;
+    left: 12%;
+    top: 62%;
     z-index: 2;
     .tiredToSee__formText--1 {
         font-size: 13px;
@@ -164,11 +169,33 @@ export default {
         top: 57%;
     }
 }
+.tiredToSee__form--4 {
+    height: 150px;
+    width: 180px;
+    left: 2%;
+    top: 78%;
+    z-index: 2;
+
+    .tiredToSee__formText--1 {
+        font-size: 20px;
+    }
+    .tiredToSee__formText--2 {
+        font-size: 15.5px;
+    }
+    .tiredToSee__formText {
+        transform: translate3d(-50%, -105%, 1px) rotateZ(-17.5deg);
+
+    }
+    @media screen and (max-width: 1050px) {
+        right: 2%;
+        top: 57%;
+    }
+}
 .tiredToSee__formText {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-50%, -50%, 1px) rotateZ(-12deg);
+    transform: translate3d(-50%, -60%, 1px) rotateZ(-12deg);
     line-height: 1;
     text-transform: uppercase;
     font-weight: bold;
@@ -181,7 +208,7 @@ export default {
     font-size: 0.75rem;
     position: absolute;
     bottom: 8vh;
-    left: 8%;
+    right: 8%;
     .hoverImage__word .hoverImage__myImg {
         bottom: 100%;
         top: unset;

@@ -1,5 +1,5 @@
 <template>
-  <div class="about">
+  <div class="about" on:mousemove="moveEyes">
     <div class="container">
       <router-link class="logo about__logo" to="/">
         <img src="../assets/img/logo.svg">
@@ -71,6 +71,17 @@ export default {
     TiredToSee
   },
   props: {
+  },
+  methods: {
+    moveEyes: function(event) {
+      // pass event object, bound to mouse move with updat
+      const eyes1 = document.querySelector("#eyes_1");
+      const eyes2 = document.querySelector("#eyes_2");
+      console.log(eyes2);
+      console.log(event.clientX);
+      // this.x = event.clientX;
+      // this.y = event.clientY;
+    }
   }
 };
 </script>
@@ -79,10 +90,13 @@ export default {
   @media screen and (max-width: 600px) {
     padding: 30px 0px 50px 0
   }
+  .hoverImage__word {
+    margin-bottom: 0;
+  }
 }
 .about__logo {
   position: absolute;
-  left: 4%;
+  left: 2%;
   top: 10vh;
   margin-left: 0%;    
 

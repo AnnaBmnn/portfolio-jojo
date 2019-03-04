@@ -20,7 +20,7 @@
       <div class="dropALine">
         <div class="dropALine__txt">
           Don't be shy
-          <a>drop me a line</a>
+          <a href="mailto:nguyen.j32@gmail.com">drop me a line</a>
         </div>
         <img class="dropALine__img" src="../assets/img/home/home_contact.svg">
     </div>
@@ -159,6 +159,7 @@ export default {
     font-weight: bold;
   }
   a {
+    color: #0B3536;
     display: block;
     position: relative;
     &:after {

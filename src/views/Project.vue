@@ -88,7 +88,7 @@ export default {
 }
 .project__logo {
   position: absolute;
-  left: 4%;
+  left: 2%;
   top: 10vh;
   margin-left: 0%;    
 

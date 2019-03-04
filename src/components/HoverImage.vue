@@ -30,7 +30,7 @@ export default {
     position: absolute;
     width: 100%;
     height: 3px;
-    top: 100%;
+    top: 90%;
     left: 0;
     background-color: #F54123;
     border-radius: 3px;
