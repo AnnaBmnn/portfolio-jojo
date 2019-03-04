@@ -1,5 +1,5 @@
 <template>
-  <div class="about" on:mousemove="moveEyes">
+  <div class="about" @mousemove="moveEyes">
     <div class="container">
       <router-link class="logo about__logo" to="/">
         <img src="../assets/img/logo.svg">
@@ -33,7 +33,8 @@
         </div>
         <div class="wassup__everyWhere">
           <div class="everyWhere__eyes">
-            <img src="../assets/img/about/eyes.svg">
+            <eyes />
+            <!-- <img src="../assets/img/about/eyes.svg"> -->
           </div>
           <ul class="everyWhere__socials">
             <span>I’M EVERYWHERE</span>
@@ -59,6 +60,7 @@ import ButtonShadow from "@/components/ButtonShadow.vue";
 import Skills from "@/components/Skills.vue";
 import HoverImage from "@/components/HoverImage.vue";
 import TiredToSee from "@/components/TiredToSee.vue";
+import Eyes from "@/components/Eyes.vue";
 
 // @ is an alias to /src
 
@@ -68,7 +70,8 @@ export default {
     ButtonShadow,
     Skills,
     HoverImage,
-    TiredToSee
+    TiredToSee,
+    Eyes
   },
   props: {
   },
@@ -77,10 +80,13 @@ export default {
       // pass event object, bound to mouse move with updat
       const eyes1 = document.querySelector("#eyes_1");
       const eyes2 = document.querySelector("#eyes_2");
-      console.log(eyes2);
+      console.log(eyes1);
+      eyes1.style.transform = `translate3d(${event.clientX*0.02}%, ${event.clientY*0.075}%,1px)`;
+      eyes2.style.transform = `translate3d(${event.clientX*0.02}%, ${event.clientY*0.075}%,1px)`;
+      console.log(eyes1);
+      console.log(window.innerHeight);
       console.log(event.clientX);
-      // this.x = event.clientX;
-      // this.y = event.clientY;
+
     }
   }
 };
