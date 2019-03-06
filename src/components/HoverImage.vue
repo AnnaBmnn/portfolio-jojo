@@ -1,10 +1,10 @@
 <template>
-  <div class="hoverImage__word">
+  <a :href="link" target="_blank" class="hoverImage__word">
     {{word}}
     <div class="hoverImage__myImg">
       <img :src="imgUrl">
     </div>
-  </div>
+  </a>
 </template>
 
 <script>
@@ -13,7 +13,8 @@ export default {
   name: "HoverImage",
   props: {
     word: String,
-    imgUrl: String
+    imgUrl: String,
+    link: String
   }
 };
 </script>

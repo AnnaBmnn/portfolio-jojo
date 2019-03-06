@@ -13,13 +13,13 @@
         </div>
         <div class="wassup__txt">
           
-            I’m Johanna Nguyen, a junior art director 
-            and a graphic designer. 
+            I’m Johanna Nguyen,
+            a junior web and graphic designer.
             <br>
             <br>
             I’m studying at <hover-image word="HETIC" imgUrl="https://media.giphy.com/media/1IDqrFySO6y1a/giphy.gif" /> in Paris, a web school 
             where I discovered UI and UX. In this way, I 
-            worked at <hover-image word="Dogstudio" imgUrl="https://66.media.tumblr.com/e1f66daca1a4dd8fd156ef3aa499d34b/tumblr_inline_msn9qyKvTO1qz4rgp.gif"/> during my last summer internship.
+            worked at <hover-image word="Dogstudio" link="https://www.dogstudio.co/" imgUrl="https://66.media.tumblr.com/e1f66daca1a4dd8fd156ef3aa499d34b/tumblr_inline_msn9qyKvTO1qz4rgp.gif"/> during my last summer internship.
             <br>
             <br>
             In the same time I started to take an interest in a more global 
@@ -28,7 +28,7 @@
             So I decided to learn and experiment on my side. 
             <br>
             <br>
-            I’m looking for a 6 months internship in a <hover-image word="cool place" imgUrl="https://media.giphy.com/media/N3SrQHIh87mJq/giphy.gif" />
+            I’m looking for a 6 months internship in a <hover-image word="cool place" link="https://www.dogstudio.co/" imgUrl="https://media.giphy.com/media/N3SrQHIh87mJq/giphy.gif" />
             where I can discover things and improve my skills in this areas. 
         </div>
         <div class="wassup__everyWhere">
@@ -38,9 +38,10 @@
           </div>
           <ul class="everyWhere__socials">
             <span>I’M EVERYWHERE</span>
-            <li><a href="dribbble.com">Dribbble</a></li>
-            <li><a href="behance.com">Behance</a></li>
-            <li><a href="linkedin.com">Linkedin</a></li>
+            <li><a target="_blank" href="https://dribbble.com/johannanguyen">Dribbble</a></li>
+            <li><a target="_blank" href="https://www.behance.net/johannanguyen">Behance</a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/johanna-nguyen/">Linkedin</a></li>
+            <li><a target="_blank" href="https://www.instagram.com/nguyen.again/">Instagram</a></li>
           </ul>
         </div>
 
@@ -152,7 +153,7 @@ export default {
 
 .wassup__txt {
   font-size: 1.125rem;
-  line-height: 110%;
+  line-height: 135%;
   padding-top: 10px;
   @media screen and (max-width: 900px) {
     padding-top: 40px;

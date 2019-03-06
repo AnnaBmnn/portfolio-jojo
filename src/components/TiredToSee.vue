@@ -1,7 +1,7 @@
 <template>
     <section class="tiredToSee">
         <div class="container tiredToSee__container">
-            <h2 class="tiredToSee__title">Are you tired to see ?</h2>
+            <h2 class="tiredToSee__title">Are you <br/> tired to see ?</h2>
             <div class="game">
                 <div class="game__card"></div>
                 <div class="game__card"></div>
@@ -135,6 +135,9 @@ export default {
     width: 220px;
     right: 3%;
     top: 10%;
+    img {
+        width: 110% !important;
+    }
     .tiredToSee__formText--1 {
         font-size: 14px;
     }
@@ -142,7 +145,7 @@ export default {
         font-size: 21px;
     }
     .tiredToSee__formText {
-        transform: translate3d(-50%, -60%, 1px) rotateZ(20deg);
+        transform: translate3d(-35%,-30%,1px) rotate(20deg);
     }
     @media screen and (max-width: 1050px) {
         right: 4%;
