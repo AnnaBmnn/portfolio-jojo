@@ -1,17 +1,13 @@
 <template>
   <div class="project">
     <div class="container">
-      <div class="project__logo">
-        <router-link class="logo " to="/">
+        <router-link class="logo project__logo" to="/">
           <img src="../assets/img/logo.svg">
         </router-link>
-      </div>
       <div class="project__card">
         <div class="project__firstLine">
           <h1 class="project__title">{{this.projectInfos.name}}</h1>
           <div class="project__illus">
-            <img class=""  :src="this.projectInfos.illus">
-            <img class=""  :src="this.projectInfos.illus">
             <img class=""  :src="this.projectInfos.illus">
           </div>
         </div>
@@ -30,8 +26,9 @@
           </div>
         </div>
       </div>
-
-      <button-shadow class="project__btn" linkTo="/" linkContent="back" />
+      <div class="project__btn--back">
+        <button-shadow class="project__btn" linkTo="/" linkContent="back" />
+      </div>
     </div>
     <div class="container container__txt">
       <div class="project__txt">
@@ -44,6 +41,7 @@
     <project-tesla v-if="this.projectInfos.name === 'tesla'" :imgs="this.projectInfos.imgs" />
     <project-vibu v-else-if="this.projectInfos.name === 'vibu'" :imgs="this.projectInfos.imgs" />
     <project-olympics v-else-if="this.projectInfos.name === 'olympics'" :imgs="this.projectInfos.imgs" />
+    <project-stuff v-else-if="this.projectInfos.name === 'stuff'" :imgs="this.projectInfos.imgs" />
     <next-project :index="(this.projectInfos.index)%4"></next-project>
   </div>
 </template>
@@ -54,6 +52,7 @@ import ButtonShadow from "@/components/ButtonShadow.vue";
 import ProjectTesla from "@/components/ProjectTesla.vue";
 import ProjectVibu from "@/components/ProjectVibu.vue";
 import ProjectOlympics from "@/components/ProjectOlympics.vue";
+import ProjectStuff from "@/components/ProjectStuff.vue";
 import NextProject from "@/components/NextProject.vue";
 
 
@@ -64,6 +63,7 @@ export default {
     ProjectTesla,
     ProjectVibu,
     ProjectOlympics,
+    ProjectStuff,
     NextProject
   },
   data: function(){
@@ -89,10 +89,10 @@ export default {
   }
 }
 .project__logo {
-  position: fixed;
-  left: 2%;
+  position: absolute;
+  left: 0%;
   top: 10vh;
-  margin-left: 0%;    
+  margin-left: 2%;    
 
   @media screen and (max-width: 1000px) {
     left: 0%;    
@@ -105,10 +105,13 @@ export default {
     width: 90px;    
   }
 }
-.project__btn {
-  position: absolute;
+.project__btn--back {
+  position: fixed;
   right: 4%;
   top: 10vh;
+  .project__btn {
+    display: inline-block;
+  }
 }
 
 .project__card {
@@ -152,16 +155,17 @@ export default {
 }
 .project__title {
   font-family: 'integral cf';
-  line-height: 0.6;
+  line-height: 0.5;
   font-size: 5.4rem;
   @media screen and (max-width: 1200px) {
     font-size: 4rem;
   }
-  @media screen and (max-width: 1050px) {
+  @media screen and (max-width: 1150px) {
     font-size: 4rem;
   }
   @media screen and (max-width: 1000px) {
     order: 2;
+    font-size: 3rem;
   }
   @media screen and (max-width: 600px) {
     font-size: 2.25rem;
@@ -169,6 +173,13 @@ export default {
 }
 .project__infos {
   margin-top: 80px;
+  margin-left: 29%;
+  @media screen and (max-width: 1200px) {
+    margin-left: 30%;
+  }
+  @media screen and (max-width: 1100px) {
+    margin-left: 0%;
+  }
 }
 .project__info {
   box-sizing: border-box;
@@ -255,9 +266,9 @@ export default {
 
 .waves {
   position: absolute;
-  bottom: 0;
+  top: 60vh;
   width: 200px;
-  transform: translateY(30%);
+  // transform: translateY(30%);
   display: block!important;
   left: 8.5%;
 }

@@ -84,9 +84,9 @@ export default {
     right: 0;
     top: 0;
     transform: translate3d(25%, 0%, 1px);
-    @media screen and (max-width: 1400px) {
-        width: 200px;
-    }
+    width: 165px;
+
+
     @media screen and (max-width: 750px) {
         transform: translate3d(10%, 0%, 1px);
         width: 90px;

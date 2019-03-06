@@ -20,7 +20,7 @@
       <div class="dropALine">
         <div class="dropALine__txt">
           Don't be shy
-          <a href="mailto:nguyen.j32@gmail.com">drop me a line</a>
+          <a target="_blank" href="mailto:nguyen.j32@gmail.com">drop me a line</a>
         </div>
         <img class="dropALine__img" src="../assets/img/home/home_contact.svg">
     </div>
@@ -54,6 +54,7 @@ export default {
 .home {
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
   background-color: #E5E7DE;
 
   .cls-2 {
@@ -123,6 +124,7 @@ export default {
   height: 117px;
   width: 117px;
   z-index: 5;
+  overflow: hidden;
   .aouuuuuards__contour {
     position: absolute;
     top: 0;
@@ -195,9 +197,10 @@ export default {
 </style>
 <style lang="scss" scoped>
 .container {
-  padding: 10vh 0 0;
+  padding: 10vh 0 0!important;
   background-color: #E5E7DE;
   height: 100vh;
-
+  box-sizing: border-box;
+  overflow: hidden;
 }
 </style>

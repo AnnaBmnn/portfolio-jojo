@@ -41,6 +41,7 @@ export default {
     font-weight: bold;
     font-size: 32px;
     text-transform: uppercase;
-    color: black;
+    color: #0B3536;
+
 }
 </style>

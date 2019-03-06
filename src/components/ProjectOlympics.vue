@@ -14,10 +14,11 @@
         <img :src="imgs[5]">
         <img :src="imgs[6]">
       </div>
+      <div class="projectOlympics__fullCOntainer">
+        <img class="projectOlympics__full" :src="imgs[7]">
+      </div>
     </div>
-    <div class="projectOlympics__fullCOntainer">
-      <img class="projectOlympics__full" :src="imgs[7]">
-    </div>
+
   </div>
 </template>
 
@@ -82,7 +83,8 @@ export default {
   overflow: hidden;
 }
 .projectOlympics__full {
-  width: 100%;
+  width: 100%!important;
+  margin-bottom: 0!important;
   height: auto;
   transform: translateY(20px);
 }

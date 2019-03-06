@@ -81,12 +81,8 @@ export default {
       // pass event object, bound to mouse move with updat
       const eyes1 = document.querySelector("#eyes_1");
       const eyes2 = document.querySelector("#eyes_2");
-      console.log(eyes1);
-      eyes1.style.transform = `translate3d(${event.clientX*0.02}%, ${event.clientY*0.075}%,1px)`;
-      eyes2.style.transform = `translate3d(${event.clientX*0.02}%, ${event.clientY*0.075}%,1px)`;
-      console.log(eyes1);
-      console.log(window.innerHeight);
-      console.log(event.clientX);
+      eyes1.style.transform = `translate3d(${event.clientX*0.018}%, ${event.clientY*0.075}%,1px)`;
+      eyes2.style.transform = `translate3d(${event.clientX*0.018}%, ${event.clientY*0.075}%,1px)`;
 
     }
   }

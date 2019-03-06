@@ -84,6 +84,7 @@ export default {
 }
 .tiredToSee__title {
     font-family: 'integral cf';
+    text-align: center;
     font-style: unset;
     font-size: 2.5rem;
     margin-bottom: 13vh;
@@ -105,8 +106,8 @@ export default {
     }
 }
 .tiredToSee__form--1 {
-    height: 160px;
-    width: 180px;
+    height: 180px;
+    width: 200px;
     left: 5%;
     top: 20%;
     z-index: 3;
@@ -124,28 +125,49 @@ export default {
         line-height: 0.7;
     }
 
+    @media screen and (max-width: 1400px) {
+        left: 5%;
+        top: 20%;
+        height: 160px;
+        width: 180px;
+    }
     @media screen and (max-width: 1050px) {
         right: 2%;
         top: 70%;
-
     }
 }
 .tiredToSee__form--2 {
-    height: 220px;
-    width: 220px;
+    height: 260px;
+    width: 260px;
     right: 3%;
     top: 10%;
     img {
-        width: 110% !important;
+        width: 120% !important;
     }
     .tiredToSee__formText--1 {
-        font-size: 14px;
+        font-size: 20px;
     }
     .tiredToSee__formText--2 {
-        font-size: 21px;
+        font-size: 29.5px;
     }
     .tiredToSee__formText {
-        transform: translate3d(-35%,-30%,1px) rotate(20deg);
+        transform:  translate3d(-25%, 0%, 1px) rotate(20deg);
+    }
+    @media screen and (max-width: 1400px) {
+
+        img {
+            width: 110% !important;
+        }
+
+        .tiredToSee__formText--1 {
+            font-size: 14px;
+        }
+        .tiredToSee__formText--2 {
+            font-size: 21px;
+        }
+        .tiredToSee__formText {
+            transform: translate3d(-35%,-30%,1px) rotate(20deg);
+        }
     }
     @media screen and (max-width: 1050px) {
         right: 4%;
@@ -157,15 +179,37 @@ export default {
     left: 12%;
     top: 62%;
     z-index: 2;
+    img {
+        width: 120%;
+    }
     .tiredToSee__formText--1 {
-        font-size: 13px;
+        font-size: 16px;
     }
     .tiredToSee__formText--2 {
-        font-size: 13px;
+        font-size: 16px;
     }
     .tiredToSee__formText {
-        transform: translate3d(-50%, -50%, 1px) rotateZ(15deg);
+        transform: translate3d(-30%, -30%, 1px) rotateZ(15deg)
 
+    }   
+    @media screen and (max-width: 1400px) {
+        height: 90px;
+        width: 97px;
+        left: 12%;
+        top: 62%;
+        z-index: 2;
+        img {
+            width: 100%;
+        }
+        .tiredToSee__formText--1 {
+            font-size: 13px;
+        }
+        .tiredToSee__formText--2 {
+            font-size: 13px;
+        }
+        .tiredToSee__formText {
+            transform: translate3d(-50%, -50%, 1px) rotateZ(15deg);
+        }        
     }
     @media screen and (max-width: 1050px) {
         right: 2%;
@@ -176,18 +220,41 @@ export default {
     height: 150px;
     width: 180px;
     left: 2%;
-    top: 78%;
+    top: 72%;
     z-index: 2;
-
+    img {
+        width: 110%
+    }
     .tiredToSee__formText--1 {
-        font-size: 20px;
+        font-size: 21px;
     }
     .tiredToSee__formText--2 {
         font-size: 15.5px;
     }
     .tiredToSee__formText {
-        transform: translate3d(-50%, -105%, 1px) rotateZ(-17.5deg);
+        transform: translate3d(-42%, -87%, 1px) rotateZ(-17.5deg);
 
+    }
+    @media screen and (max-width: 1400px) {
+
+        height: 150px;
+        width: 180px;
+        left: 2%;
+        top: 78%;
+        z-index: 2;
+        img {
+            width: 100%
+        }
+        .tiredToSee__formText--1 {
+            font-size: 20px;
+        }
+        .tiredToSee__formText--2 {
+            font-size: 15.5px;
+        }
+        .tiredToSee__formText {
+            transform: translate3d(-50%, -105%, 1px) rotateZ(-17.5deg);
+
+        }
     }
     @media screen and (max-width: 1050px) {
         right: 2%;
