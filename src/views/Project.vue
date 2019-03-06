@@ -1,9 +1,11 @@
 <template>
   <div class="project">
     <div class="container">
-      <router-link class="logo project__logo" to="/">
-        <img src="../assets/img/logo.svg">
-      </router-link>
+      <div class="project__logo">
+        <router-link class="logo " to="/">
+          <img src="../assets/img/logo.svg">
+        </router-link>
+      </div>
       <div class="project__card">
         <div class="project__firstLine">
           <h1 class="project__title">{{this.projectInfos.name}}</h1>
@@ -87,7 +89,7 @@ export default {
   }
 }
 .project__logo {
-  position: absolute;
+  position: fixed;
   left: 2%;
   top: 10vh;
   margin-left: 0%;    
@@ -115,7 +117,7 @@ export default {
   padding: 50px 60px;
   width: 60%;
   margin: 0 auto;
-  border: 2px solid #0B3536;
+  border: 3px solid #0B3536;
   border-radius: 6px;
   background-color: white;
   &:after {

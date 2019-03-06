@@ -10,8 +10,8 @@ const projects = [
         txt: "Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia, doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem excarnificari praecepit, qui ita evisceratus ut cruciatibus membra deessent, inplorans caelo iustitiam.",
         imgs: [
             "../assets/project/vibu/vibu_1.png",
-            "../assets/project/vibu/vibu_2.png",
-            "../assets/project/vibu/vibu_3.png",
+            "../assets/project/vibu/vibu_2.jpg",
+            "../assets/project/vibu/vibu_3.jpg",
             "../assets/project/vibu/vibu_4.png",
             "../assets/project/vibu/vibu_5.png",
             "../assets/project/vibu/vibu_6.png",

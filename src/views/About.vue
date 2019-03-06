@@ -23,7 +23,7 @@
             <br>
             <br>
             In the same time I started to take an interest in a more global 
-            form of design: graphic, motion and branding. 
+            form of design: graphic, motion and print. 
             And today, I really want to make this curosity my profession.
             So I decided to learn and experiment on my side. 
             <br>
