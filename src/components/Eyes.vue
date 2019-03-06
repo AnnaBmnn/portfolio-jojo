@@ -17,9 +17,7 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-circle {
-    transition: transform ease-in-out 0.2s ;
-}
+
 </style>
 
 
