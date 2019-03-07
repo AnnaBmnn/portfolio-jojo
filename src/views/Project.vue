@@ -92,7 +92,7 @@ export default {
   position: absolute;
   left: 0%;
   top: 10vh;
-  margin-left: 2%;    
+  margin-left: 1.9%;    
 
   @media screen and (max-width: 1000px) {
     left: 0%;    

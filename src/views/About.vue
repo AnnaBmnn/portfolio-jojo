@@ -99,7 +99,7 @@ export default {
 }
 .about__logo {
   position: absolute;
-  left: 2%;
+  left: 1.9%;
   top: 10vh;
   margin-left: 0%;    
 
@@ -198,7 +198,7 @@ export default {
     &:after {
       content: '';
       position: absolute;
-      width: 100%;
+      width: 99%;
       height: 3px;
       border-radius: 3px;
       top: 100%;
