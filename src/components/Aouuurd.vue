@@ -20,9 +20,9 @@ export default {
   font-size:9.8px;
   fill:#0b3536;
 }
-.cls-1{ 
-  font-family:'integral cf';
-}
-.cls-2{font-family:'integral cf';}
+// .cls-1{ 
+//   font-family:'integral cf';
+// }
+// .cls-2{font-family:'integral cf';}
 
 </style>

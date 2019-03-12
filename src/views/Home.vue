@@ -17,12 +17,15 @@
           <img class="waves__img"  src="../assets/img/home/wave.svg">
         </div>
       </div>
-      <div class="dropALine">
+      <div class="dropALine"  @mouseenter="playAnimation" @mouseleave="reverseAnimation">
         <div class="dropALine__txt">
           Don't be shy
           <a target="_blank" href="mailto:nguyen.j32@gmail.com">drop me a line</a>
         </div>
-        <img class="dropALine__img" src="../assets/img/home/home_contact.svg">
+        
+        <div class="dropALine__img">
+          <lottie :options="defaultOptions" v-on:animCreated="handleAnimation" />
+        </div>
     </div>
     </div>
     <div class="aouuuuuards">
@@ -35,6 +38,9 @@
 
 <script>
 // @ is an alias to /src
+import Lottie from 'vue-lottie';
+import * as hand from '../assets/animations/hand.json';
+import {hand2} from '../assets/animations/hand2.json';
 import Card from "@/components/Card.vue";
 import Aouuurd from "@/components/Aouuurd.vue";
 
@@ -42,10 +48,37 @@ export default {
   name: "home",
   components: {
     Card,
-    Aouuurd
+    Aouuurd,
+    Lottie
   },
   props: {
     cardsArray: Array
+  },
+  data() {
+    return {
+      defaultOptions: {
+        animationData: hand.default,
+        autoplay: false,
+        loop: false
+      },
+      animationSpeed: 1
+    }
+  },
+  methods: {
+    test: function(){
+      console.log('coucou');
+    },
+    handleAnimation: function (anim) {
+      this.anim = anim;
+    },
+    playAnimation: function(){
+      this.anim.setSpeed(1);
+      this.anim.play();
+    },
+    reverseAnimation: function(){
+      this.anim.setSpeed(-1);
+      this.anim.play();
+    }
   }
 };
 </script>
@@ -116,7 +149,9 @@ export default {
     }
   }
 }
-
+.dropALine__img {
+  cursor: pointer;
+}
 .aouuuuuards {
   position: absolute;
   left: 5%;
@@ -153,6 +188,7 @@ export default {
   align-items: center;
   font-weight: 900;
   font-style: italic;
+  z-index: 4;
   .dropALine__txt {
     margin-right: 30px;
     font-family: 'integral cf';
