@@ -79,11 +79,14 @@ export default {
 <style lang="scss" scoped>
 .project {
   .container {
+    z-index: 0;
     height: unset;
     padding: 10vh 0;
   }
 }
 .container {
+  z-index: 0;
+
   @media screen and (max-width: 600px) {
     padding: 30px 0px 50px 0
   }
@@ -108,7 +111,9 @@ export default {
 .project__btn--back {
   position: fixed;
   right: 4%;
+
   top: 10vh;
+  z-index: 100;
   .project__btn {
     display: inline-block;
   }
@@ -233,6 +238,7 @@ export default {
   }
 }
 .project__txt {
+  position: static;
   margin-left: 40%;
   width: 33%;
   @media screen and (max-width: 730px) {
