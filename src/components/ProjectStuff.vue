@@ -4,14 +4,13 @@
         <img :src="imgs[0]">
         <img :src="imgs[1]">
     </div>
-
     <img  :src="imgs[2]">
-    <img  :src="imgs[3]">
+    <iframe src="https://player.vimeo.com/video/304574377" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     <div class="projectStuff__container">
       <img :src="imgs[4]">
       <img :src="imgs[5]">
     </div>
-    <img :src="imgs[6]">
+    <iframe src="https://player.vimeo.com/video/273089616" width="640" height="360" frameborder="0" allowfullscreen></iframe>
 
     <div class="projectStuff__container">
       <img :src="imgs[7]">
@@ -41,13 +40,13 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
-    img {
+    img, iframe {
         margin-bottom: 20vh;
         width: 70%;
         // margin: 0 auto;
     }
     @media screen and (max-width: 1000px) {
-        img {
+        img, iframe {
             width: 100%;
         }
     }

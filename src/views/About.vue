@@ -17,7 +17,7 @@
             a junior web and graphic designer.
             <br>
             <br>
-            I’m studying at <hover-image word="HETIC" imgUrl="https://media.giphy.com/media/1IDqrFySO6y1a/giphy.gif" /> in Paris, a web school 
+            I’m studying at <hover-image word="HETIC" link="https://www.hetic.net/" imgUrl="https://media.giphy.com/media/1IDqrFySO6y1a/giphy.gif" /> in Paris, a web school 
             where I discovered UI and UX. In this way, I 
             worked at <hover-image word="Dogstudio" link="https://www.dogstudio.co/" imgUrl="https://66.media.tumblr.com/e1f66daca1a4dd8fd156ef3aa499d34b/tumblr_inline_msn9qyKvTO1qz4rgp.gif"/> during my last summer internship.
             <br>
@@ -115,8 +115,8 @@ export default {
   }
 }
 .about__btnContainer {
+  z-index: 100;
   position: fixed;
-
   right: 4%;
   top: 10vh;
 }

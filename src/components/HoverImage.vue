@@ -21,6 +21,14 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
+.tiredToSee__luv {
+
+  .hoverImage__word:hover .hoverImage__myImg {
+      top: unset;
+      bottom: 370%!important;
+      left: -290%!important;
+  }
+}
 .hoverImage__word {
   color: inherit;
   display: inline-block;

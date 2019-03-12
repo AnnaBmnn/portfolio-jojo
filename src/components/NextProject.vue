@@ -1,6 +1,8 @@
 <template>
     <div class="nextProject">
-        <img src="../assets/img/project/project_next.svg">
+        <div class="nextProject__img">
+            <lottie :options="defaultOptions" v-on:animCreated="handleAnimation" />
+        </div>
         <router-link class="txt"  :to="projectInfos.name">
             zzzzzz... <br>
             boring, <br>
@@ -10,17 +12,41 @@
 </template>
 
 <script>
+import Lottie from 'vue-lottie';
+import * as next from '../assets/animations/next.json';
 import { projects } from "../datas/projects.js";
 
 export default {
     name: "NextProject",
+    components: {
+        Lottie
+    },
     props: {
-        index: Number
+        index: Number,
     },
     data: function(){
         return {
-            projectInfos: projects[this.index]
+            projectInfos: projects[this.index],
+            defaultOptions: {
+                animationData: next.default,
+                // autoplay: false,
+                // loop: false
+            },
+            animationSpeed: 1
         
+        }
+    },
+    methods: {
+        handleAnimation: function (anim) {
+            this.anim = anim;
+        },
+        playAnimation: function(){
+            this.anim.setSpeed(1);
+            this.anim.play();
+        },
+        reverseAnimation: function(){
+            this.anim.setSpeed(-1);
+            this.anim.play();
         }
     }
 };
@@ -33,6 +59,14 @@ export default {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.nextProject__img {
+    height: 200px;
+    width: auto;
+    svg {
+        height: 200px;
+        width: auto;
+    }
 }
 .txt {
     font-family:'integral cf';

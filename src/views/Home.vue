@@ -29,7 +29,8 @@
     </div>
     </div>
     <div class="aouuuuuards">
-      <aouuurd class="aouuuuuards__contour"/>
+      <img src="../assets/img/home/ok.png" class="aouuuuuards__contour"/>
+      <!-- <aouuurd class="aouuuuuards__contour"/> -->
       <img class="aouuuuuards__hand"  src="../assets/img/home/handok.svg">
     </div>
 
@@ -40,7 +41,6 @@
 // @ is an alias to /src
 import Lottie from 'vue-lottie';
 import * as hand from '../assets/animations/hand.json';
-import {hand2} from '../assets/animations/hand2.json';
 import Card from "@/components/Card.vue";
 import Aouuurd from "@/components/Aouuurd.vue";
 
@@ -65,9 +65,6 @@ export default {
     }
   },
   methods: {
-    test: function(){
-      console.log('coucou');
-    },
     handleAnimation: function (anim) {
       this.anim = anim;
     },
@@ -161,6 +158,9 @@ export default {
   z-index: 5;
   overflow: hidden;
   .aouuuuuards__contour {
+    width: 117px;
+    height: 117px;
+    animation: rotateIt 12s linear infinite;
     position: absolute;
     top: 0;
     left: 0;
@@ -170,7 +170,7 @@ export default {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate3d(-39%, -49%, 1px);
+    transform: translate3d(-41%, -49%, 1px);
   }
   @media screen and (max-width: 600px) {
     top: 30px;

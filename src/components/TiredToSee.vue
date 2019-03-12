@@ -49,7 +49,7 @@
                 </span>
             </div>
         </div>
-        <div class="tiredToSee__luv"><div>Coded with &nbsp</div><div>luv by <hover-image word="Anna" imgUrl="../assets/gif/anna.gif"  /></div></div>
+        <div class="tiredToSee__luv"><div>Coded with &nbsp</div><div>luv by <hover-image word="Anna" link="https://annabaumann.fr/" imgUrl="../assets/gif/anna.gif"  /></div></div>
 
     </section>
 </template>
@@ -72,9 +72,11 @@ export default {
 .tiredToSee {
     position: relative;
     padding-bottom: 18vh;
+    z-index: 0;
 }
 
 .tiredToSee__container {
+    z-index: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -141,16 +143,21 @@ export default {
     width: 260px;
     right: 3%;
     top: 10%;
+    z-index: 0;
     img {
         width: 120% !important;
+        z-index: 0;
     }
     .tiredToSee__formText--1 {
         font-size: 20px;
+        z-index: 1;
     }
     .tiredToSee__formText--2 {
         font-size: 29.5px;
+        z-index: 1;
     }
     .tiredToSee__formText {
+        z-index: 1;
         transform:  translate3d(-25%, 0%, 1px) rotate(20deg);
     }
     @media screen and (max-width: 1400px) {
@@ -275,14 +282,11 @@ export default {
     }
 }
 .tiredToSee__luv {
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     position: absolute;
+    z-index: 10;
     bottom: 8vh;
     right: 8%;
-    .hoverImage__word .hoverImage__myImg {
-        bottom: 100%;
-        top: unset;
-    }
     @media screen and (max-width: 600px) {
         bottom: 0px;
         left: unset;
@@ -345,9 +349,11 @@ export default {
     left: 50%;
     transform: translate3d(-50%, 0, 1px);
     transition: 0.3s ease-in transform;
-    z-index: 2;
+    cursor: url('~@/assets/img/about/cursor.svg'), auto;
+    z-index: 10;
     &:hover {
         transform: translate3d(-50%, 3px, 1px);
+        cursor: url('~@/assets/img/about/cursor.svg'), auto;
     }
 }
 .tiredToSee__holeImg {
@@ -380,10 +386,13 @@ export default {
     right: -80px;
     top: 50%;
     transform: translate3d(-3px, -100%, 1px);
-    z-index: -1;
+    z-index: 7;
     transition: 0.3s transform ease-in-out;
     transform-origin: bottom;
+    cursor: url('~@/assets/img/about/cursor.svg'), auto;
+
     &:hover {
+        cursor: url('~@/assets/img/about/cursor.svg'), auto;
         transform: translate3d(-3px, -100%, 1px) rotateX(15deg);
     }
     @media screen and (max-width: 600px) {

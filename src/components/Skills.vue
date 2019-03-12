@@ -7,7 +7,7 @@
             </h2>
             <div class="skills__cards">
                 <div 
-                    class="skills__card"
+                    :class="`skills__card ${skill.name}`"
                     v-for="skill in skills"
                     :key="skill.name"
                 >
@@ -16,7 +16,7 @@
 
                     </div>
                     
-                    <div class="skills__name">
+                    <div class="skills__name ">
                         {{skill.name}}
                     </div>
                 </div>
@@ -61,9 +61,12 @@ export default {
 </script>
 <style lang="scss" scoped>
 .skills {
+    z-index: 0;
   color: white;
   background-color:  #F54123;
   .container {
+    z-index: 0;
+
     @media screen and (max-width: 600px) {
         padding: 50px 0px 50px 0!important;
     }
@@ -76,6 +79,9 @@ export default {
     @media screen and (max-width: 750px) {
         width: 100%;
 
+    }
+    .drinking .skills__img {
+        transform: translateX(3px);
     }
 }
 
