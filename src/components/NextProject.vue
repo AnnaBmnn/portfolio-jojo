@@ -29,11 +29,11 @@ export default {
             projectInfos: projects[this.index],
             defaultOptions: {
                 animationData: next.default,
-                // autoplay: false,
-                // loop: false
+                autoplay: false,
+                loop: false
             },
-            animationSpeed: 1
-        
+            animationSpeed: 1,
+            lastScroll: 0
         }
     },
     methods: {
@@ -47,7 +47,28 @@ export default {
         reverseAnimation: function(){
             this.anim.setSpeed(-1);
             this.anim.play();
+        },
+        handleScroll: function(){
+            // Our element
+            const nextProject = document.querySelector('.nextProject');
+            const containers = document.querySelectorAll('.container');
+            const projectStuff = document.querySelector('.project__anim');
+
+            const distance = containers[0].offsetHeight + containers[1].offsetHeight + projectStuff.offsetHeight - window.innerHeight ;
+            if(window.scrollY > distance && window.scrollY < distance+50 && this.lastScroll < window.scrollY ) {
+                this.anim.setSpeed(1);
+                this.anim.play();
+            }
+            if( this.lastScroll > window.scrollY ) {
+                console.log('rever');
+                this.anim.setSpeed(-1);
+                this.anim.play();
+            }
+            this.lastScroll = window.scrollY;
         }
+    },
+    mounted(){
+        window.addEventListener('scroll', this.handleScroll);
     }
 };
 </script>

@@ -1,5 +1,5 @@
 <template>
-  <div class="projectTesla ">
+  <div class="projectTesla project__anim">
     <img class="project__big" :src="imgs[0]">
     <img class="project__big" :src="imgs[1]">
     <img class="project__big" :src="imgs[2]">

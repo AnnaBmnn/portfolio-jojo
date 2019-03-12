@@ -1,5 +1,5 @@
 <template>
-  <div class="projectVibu ">
+  <div class="projectVibu project__anim">
     <div class="projectVibu__two">
       <img :src="imgs[0]">
       <img :src="imgs[1]">

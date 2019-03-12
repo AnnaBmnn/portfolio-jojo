@@ -123,7 +123,6 @@ export default {
 .about__btn {
   display: inline-block;
   position: relative;
-  padding: 12px 12px;
 }
 
 .wassup__wrapper {

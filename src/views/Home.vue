@@ -14,11 +14,12 @@
           :isProject="false"
         />
         <div class="waves">
-          <img class="waves__img"  src="../assets/img/home/wave.svg">
+          <img class="waves__img waves--1"  src="../assets/img/home/wave.svg">
+          <img class="waves__img waves--2"  src="../assets/img/home/wave.svg">
         </div>
       </div>
-      <div class="dropALine"  @mouseenter="playAnimation" @mouseleave="reverseAnimation">
-        <div class="dropALine__txt">
+      <div class="dropALine"  >
+        <div class="dropALine__txt" @mouseenter="playAnimation" @mouseleave="reverseAnimation">
           Don't be shy
           <a target="_blank" href="mailto:nguyen.j32@gmail.com">drop me a line</a>
         </div>
@@ -29,7 +30,7 @@
     </div>
     </div>
     <div class="aouuuuuards">
-      <img src="../assets/img/home/ok.png" class="aouuuuuards__contour"/>
+      <img src="../assets/img/home/ok.svg" class="aouuuuuards__contour"/>
       <!-- <aouuurd class="aouuuuuards__contour"/> -->
       <img class="aouuuuuards__hand"  src="../assets/img/home/handok.svg">
     </div>
@@ -146,9 +147,7 @@ export default {
     }
   }
 }
-.dropALine__img {
-  cursor: pointer;
-}
+
 .aouuuuuards {
   position: absolute;
   left: 5%;
@@ -189,12 +188,17 @@ export default {
   font-weight: 900;
   font-style: italic;
   z-index: 4;
+  .dropALine__img svg {
+    height: 100px;
+    width: 150px;
+  }
   .dropALine__txt {
-    margin-right: 30px;
+    margin-right: 20px;
     font-family: 'integral cf';
     font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: bold;
+    cursor: pointer;
   }
   a {
     color: #0B3536;
@@ -220,9 +224,24 @@ export default {
 }
 .waves {
   width: 40%;
-  transform: translate3d(-25%, 100%, 1px);
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  transform: translate3d(-25%, 50%, 1px);
   .waves__img {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    display: inline-block;
+  }
+  .waves--1 {
+    transform: translate3d(0%, 0%, 1px);
+    animation: waveItUn 3s linear infinite;
+  }
+  .waves--2 {
+    transform: translate3d(100%, 0%, 1px);
+    animation: waveItDeux 3s linear infinite ;
   }
   @media screen and (max-width: 1150px) {
     display: none;
@@ -239,4 +258,5 @@ export default {
   box-sizing: border-box;
   overflow: hidden;
 }
+
 </style>

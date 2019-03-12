@@ -3,3 +3,25 @@
     50% { transform: scale(1) rotateZ(180deg); }
     100% { transform: scale(1) rotateZ(360deg); }
 }
+
+@keyframes translateItUn {
+    0% { transform: scale(1) rotateZ(0deg); }
+    50% { transform: scale(1) rotateZ(180deg); }
+    100% { transform: scale(1) rotateZ(360deg); }
+}
+@keyframes translateItDeux {
+    0% { transform: scale(1) rotateZ(0deg); }
+    50% { transform: scale(1) rotateZ(180deg); }
+    100% { transform: scale(1) rotateZ(360deg); }
+}
+
+@keyframes waveItUn {
+    0% { transform: translate3d(0%, 0%, 1px); }
+    // 50% { transform: translate3d(100%, 0%, 1px); }
+    100% { transform: translate3d(100%, 0%, 1px); }
+}
+@keyframes waveItDeux {
+    0% { transform: translate3d(-98%, 0%, 1px); }
+    // 50% { transform: translate3d(-100%, 0%, 1px); }
+    100% { transform: translate3d(2%, 0%, 1px); }
+}

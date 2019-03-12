@@ -1,7 +1,9 @@
 <template>
     
-    <router-link class="btn" :to="linkTo">
-        {{linkContent}}
+    <router-link class="btn__container" :to="linkTo">
+        <div class="btn">{{linkContent}}</div>
+        <div class="btn__shadow" >
+        </div>
     </router-link>
 
 </template>
@@ -31,18 +33,29 @@ $orange: #F54123;
   text-transform: uppercase;
   font-weight: bold;
   position: relative;
-  &:after {
-    z-index: -1;
-    content: "";
-    position: absolute;
-    border: 3px solid $orange;
-    width: 100%;
-    height: 100%;
-    left: 5px;
-    top: 5px;
-    background-color: #F54123;
-    border-radius: 6px;
+  will-change: transform;
+  transform: translate3d(0,0,1px);
+  transition: 0.3s ease-in-out transform;
+  &:hover {
+    transform: translate3d(8px,8px,1px);
   }
 }
-
+.btn__container {
+  position: relative;
+}
+.btn__shadow {
+  z-index: -1;
+  content: "";
+  position: absolute;
+  // border: 3px solid $orange;
+  width: 100%;
+  height: 100%;
+  left: 8px;
+  top: 8px;
+  background-color: #F54123;
+  border-radius: 6px;
+}
+.home .btn__container {
+  display: block;
+}
 </style>

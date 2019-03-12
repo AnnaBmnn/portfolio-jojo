@@ -36,7 +36,8 @@
       </div>
     </div>
     <div class="waves">
-      <img class="waves__img"  src="../assets/img/home/wave.svg">
+      <img class="waves__img waves--1"  src="../assets/img/home/wave.svg">
+      <img class="waves__img waves--2"  src="../assets/img/home/wave.svg">
     </div>
     <project-tesla v-if="this.projectInfos.name === 'tesla'" :imgs="this.projectInfos.imgs" />
     <project-vibu v-else-if="this.projectInfos.name === 'vibu'" :imgs="this.projectInfos.imgs" />
@@ -54,6 +55,7 @@ import ProjectVibu from "@/components/ProjectVibu.vue";
 import ProjectOlympics from "@/components/ProjectOlympics.vue";
 import ProjectStuff from "@/components/ProjectStuff.vue";
 import NextProject from "@/components/NextProject.vue";
+import { nearer } from 'q';
 
 
 export default {
@@ -72,7 +74,8 @@ export default {
         return project.name == this.$route.params.slug;
     })
     }
-  }
+  },
+
 };
 </script>
 
@@ -233,6 +236,7 @@ export default {
 }
 .container__txt {
   padding-top: 5vh;
+  position: static;
   @media screen and (max-width: 730px) {
     width: 100%;
   }
@@ -277,5 +281,13 @@ export default {
   // transform: translateY(30%);
   display: block!important;
   left: 8.5%;
+  .waves--1 {
+    transform: translate3d(0%, 0%, 1px);
+    animation: waveItUn 3s linear infinite;
+  }
+  .waves--2 {
+    transform: translate3d(100%, 0%, 1px);
+    animation: waveItDeux 3s linear infinite ;
+  }
 }
 </style>

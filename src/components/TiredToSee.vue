@@ -3,9 +3,27 @@
         <div class="container tiredToSee__container">
             <h2 class="tiredToSee__title">Are you <br/> tired to see ?</h2>
             <div class="game">
-                <div class="game__card"></div>
-                <div class="game__card"></div>
-                <div class="game__card"></div>
+                <div class="game__card">
+                    <div class="game__container game__container--1">
+                        <div class="game__phrase">THIS WAVE ANIMATION EFFECT ON EVERY ****ING  WEBSITES</div>
+                        <div class="game__phrase">DARK BACKGROUND ON EVERY PORTFOLIO</div>
+                    </div>
+                    <div class="game__container game__container--2">
+                        <div class="game__phrase">THIS WAVE ANIMATION EFFECT ON EVERY ****ING  WEBSITES</div>
+                        <div class="game__phrase">DARK BACKGROUND ON EVERY PORTFOLIO</div>
+                    </div>
+                </div>
+                <div class="game__card">
+                    <div class="game__container">
+                        <div class="game__phrase">DRUK FONT</div>
+                        <div class="game__phrase">websites that transform your PC into a steam iron</div>
+                    </div>                    
+                </div>
+                <div class="game__card">
+                    <div class="game__container">
+                        <div class="game__phrase red">THEN CONTACT ME</div>
+                    </div>                    
+                </div>
                 <div class="game__poigne">
                     <img class="game__poigne--1" src="../assets/img/about/poigne1.svg">
                     <img class="game__poigne--2" src="../assets/img/about/poigne2.svg">
@@ -405,6 +423,25 @@ export default {
     border-radius: 6px;
     background-color: white;
     border: 3px solid #0B3536;
-
+    overflow: hidden;
+    .red {
+        color: #F54123;
+    }
+    .game__container {
+        display: flex;
+        flex-direction: column;
+        .game__phrase {
+            text-transform: uppercase;
+            height: 130px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'integral cf';
+            font-size: 0.75rem;
+            font-weight: bold;
+            width: 100%;
+        }
+    }
 }
 </style>

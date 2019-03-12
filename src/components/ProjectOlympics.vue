@@ -1,6 +1,6 @@
 <template>
   <div class="proj">
-    <div class="projectOlympics">
+    <div class="projectOlympics project__anim">
       <div class="projectOlympics__two">
         <img :src="imgs[0]">
         <img :src="imgs[1]">

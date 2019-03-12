@@ -21,7 +21,10 @@
                     </div>
                 </div>
             </div>
-            <img class="skills__waves" src="../assets/img/about/wave.svg">
+            <div class="waves__container">
+                <img class="skills__waves waves--1" src="../assets/img/about/wave.svg">
+                <img class="skills__waves waves--2" src="../assets/img/about/wave.svg">
+            </div>
         </div>
       </div>
     </section>
@@ -60,6 +63,23 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
+.waves__container {
+    position: absolute;
+    right: 0;
+    top: 0;
+    transform: translate3d(0%, 0%, 1px);
+    overflow: hidden;
+    height: 85px;
+    width: 165px;
+    .waves--1 {
+        transform: translate3d(0%, 0%, 1px);
+        animation: waveItUn 3s linear infinite;
+    }
+    .waves--2 {
+        transform: translate3d(100%, 0%, 1px);
+        animation: waveItDeux 3s linear infinite ;
+    }
+}
 .skills {
     z-index: 0;
   color: white;
@@ -89,7 +109,7 @@ export default {
     position: absolute;
     right: 0;
     top: 0;
-    transform: translate3d(25%, 0%, 1px);
+    // transform: translate3d(25%, 0%, 1px);
     width: 165px;
 
 
