@@ -17,7 +17,6 @@
 </template>
 
 <script>
-
 export default {
   name: "ProjectTesla",
   props: {
@@ -53,7 +52,7 @@ export default {
     justify-content: center;
 
     img {
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-bottom: 20vh;
         margin-left: 10vw;
       }
@@ -65,9 +64,8 @@ export default {
     align-items: center;
 
     img {
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-left: 0;
-
       }
       max-width: 100%;
       width: auto;
@@ -93,7 +91,6 @@ export default {
       max-width: 100%;
       width: auto;
       margin: 0 0 20vh 0;
-
     }
   }
 }

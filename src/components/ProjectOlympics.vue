@@ -23,7 +23,6 @@
 </template>
 
 <script>
-
 export default {
   name: "ProjectOlympics",
   props: {
@@ -34,7 +33,6 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
-
 .projectOlympics {
   width: 72%;
   margin: 0 auto;
@@ -42,7 +40,6 @@ export default {
   img {
     width: 30%;
     margin: 0 0 20vh 0;
-
   }
 }
 .projectOlympics__two {
@@ -50,10 +47,10 @@ export default {
   justify-content: center;
   align-items: flex-start;
   img {
-    &:nth-child(1){
+    &:nth-child(1) {
       margin-right: 2.5vw;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: 2.5vw;
     }
   }
@@ -68,10 +65,10 @@ export default {
     img {
       max-width: 100%;
       width: auto;
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-right: 0vw;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-left: 0vw;
       }
     }
@@ -83,8 +80,8 @@ export default {
   overflow: hidden;
 }
 .projectOlympics__full {
-  width: 100%!important;
-  margin-bottom: 0!important;
+  width: 100% !important;
+  margin-bottom: 0 !important;
   height: auto;
   transform: translateY(20px);
 }
@@ -98,7 +95,7 @@ export default {
     justify-content: center;
 
     img {
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-bottom: 20vh;
         margin-left: 5vw;
       }
@@ -111,10 +108,10 @@ export default {
     img {
       max-width: 100%;
       width: auto;
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-right: 0vw;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-left: 0vw;
       }
     }

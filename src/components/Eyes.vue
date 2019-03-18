@@ -10,8 +10,7 @@
 <script>
 export default {
   name: "Eyes",
-  props: {
-  }
+  props: {}
 };
 </script>
 
@@ -21,5 +20,3 @@ svg {
   width: 92px;
 }
 </style>
-
-

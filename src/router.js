@@ -2,7 +2,6 @@ import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
 
-
 Vue.use(Router);
 
 export default new Router({
@@ -12,10 +11,7 @@ export default new Router({
       name: "home",
       component: Home,
       props: {
-        cardsArray: [
-          "blue",
-          "orange"
-        ]
+        cardsArray: ["blue", "orange"]
       }
     },
     {
@@ -30,8 +26,7 @@ export default new Router({
     {
       path: "/project/:slug",
       name: "project",
-      props: {
-      },
+      props: {},
       // route level code-splitting
       // this generates a separate chunk (about.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
@@ -39,7 +34,7 @@ export default new Router({
         import(/* webpackChunkName: "project" */ "./views/Project.vue")
     }
   ],
-  scrollBehavior (to, from, savedPosition) {
-    return { x: 0, y: 0 }
-  },
+  scrollBehavior() {
+    return { x: 0, y: 0 };
+  }
 });

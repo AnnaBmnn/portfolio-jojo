@@ -40,16 +40,14 @@
 
 <script>
 // @ is an alias to /src
-import Lottie from 'vue-lottie';
-import * as hand from '../assets/animations/hand.json';
+import Lottie from "vue-lottie";
+import * as hand from "../assets/animations/hand.json";
 import Card from "@/components/Card.vue";
-import Aouuurd from "@/components/Aouuurd.vue";
 
 export default {
   name: "home",
   components: {
     Card,
-    Aouuurd,
     Lottie
   },
   props: {
@@ -63,17 +61,17 @@ export default {
         loop: false
       },
       animationSpeed: 1
-    }
+    };
   },
   methods: {
-    handleAnimation: function (anim) {
+    handleAnimation: function(anim) {
       this.anim = anim;
     },
-    playAnimation: function(){
+    playAnimation: function() {
       this.anim.setSpeed(1);
       this.anim.play();
     },
-    reverseAnimation: function(){
+    reverseAnimation: function() {
       this.anim.setSpeed(-1);
       this.anim.play();
     }
@@ -86,7 +84,7 @@ export default {
   height: 100vh;
   width: 100vw;
   overflow: hidden;
-  background-color: #E5E7DE;
+  background-color: #e5e7de;
 
   .cls-2 {
     font-family: "integral cf";
@@ -101,7 +99,7 @@ export default {
   z-index: 1;
   width: 90%;
   margin: 0 auto;
-  padding: 10vh 0 ;
+  padding: 10vh 0;
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
@@ -112,7 +110,7 @@ export default {
   }
 }
 .container--right {
-  display: flex; 
+  display: flex;
   flex-direction: column;
   margin-right: 5%;
 
@@ -176,7 +174,6 @@ export default {
     right: 30px;
     left: unset;
     bottom: unset;
-
   }
 }
 .dropALine {
@@ -194,14 +191,14 @@ export default {
   }
   .dropALine__txt {
     margin-right: 20px;
-    font-family: 'integral cf';
+    font-family: "integral cf";
     font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
   }
   a {
-    color: #0B3536;
+    color: #0b3536;
     display: block;
     position: relative;
     &:after {
@@ -211,7 +208,7 @@ export default {
       position: absolute;
       top: 125%;
       left: 0;
-      background-color: #F54123;
+      background-color: #f54123;
       border-radius: 8px;
     }
   }
@@ -241,22 +238,19 @@ export default {
   }
   .waves--2 {
     transform: translate3d(100%, 0%, 1px);
-    animation: waveItDeux 3s linear infinite ;
+    animation: waveItDeux 3s linear infinite;
   }
   @media screen and (max-width: 1150px) {
     display: none;
   }
 }
-
-
 </style>
 <style lang="scss" scoped>
 .container {
-  padding: 10vh 0 0!important;
-  background-color: #E5E7DE;
+  padding: 10vh 0 0 !important;
+  background-color: #e5e7de;
   height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
 }
-
 </style>

@@ -22,7 +22,6 @@
 </template>
 
 <script>
-
 export default {
   name: "ProjectStuff",
   props: {
@@ -34,38 +33,39 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .projectStuff {
-    width: 72%;
-    margin: 0 auto;
-    padding: 10vh 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    img, iframe {
-        margin-bottom: 20vh;
-        width: 70%;
-        // margin: 0 auto;
+  width: 72%;
+  margin: 0 auto;
+  padding: 10vh 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img,
+  iframe {
+    margin-bottom: 20vh;
+    width: 70%;
+    // margin: 0 auto;
+  }
+  @media screen and (max-width: 1000px) {
+    img,
+    iframe {
+      width: 100%;
     }
-    @media screen and (max-width: 1000px) {
-        img, iframe {
-            width: 100%;
-        }
-    }
+  }
 }
 .projectStuff__container {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  img {
+    width: 48%;
+  }
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    justify-content: center;
+
     img {
-        width: 48%;
-
+      width: 100%;
     }
-    @media screen and (max-width: 1000px) {
-        flex-direction: column;
-        justify-content: center;
-
-        img {
-            width: 100%;
-        }
-    }
+  }
 }
 </style>

@@ -18,7 +18,6 @@
 </template>
 
 <script>
-
 export default {
   name: "ProjectVibu",
   props: {
@@ -36,7 +35,6 @@ export default {
   img {
     width: 30%;
     margin: 0 0 20vh 0;
-
   }
 }
 .projectVibu__two {
@@ -44,10 +42,10 @@ export default {
   justify-content: center;
   align-items: flex-start;
   img {
-    &:nth-child(1){
+    &:nth-child(1) {
       margin-right: 2.5vw;
     }
-    &:nth-child(2){
+    &:nth-child(2) {
       margin-left: 2.5vw;
     }
   }
@@ -62,10 +60,10 @@ export default {
     img {
       max-width: 100%;
       width: auto;
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-right: 0vw;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-left: 0vw;
       }
     }
@@ -81,7 +79,7 @@ export default {
     justify-content: center;
 
     img {
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-bottom: 20vh;
         margin-left: 5vw;
       }
@@ -94,10 +92,10 @@ export default {
     img {
       max-width: 100%;
       width: auto;
-      &:nth-child(1){
+      &:nth-child(1) {
         margin-right: 0vw;
       }
-      &:nth-child(2){
+      &:nth-child(2) {
         margin-left: 0vw;
       }
     }

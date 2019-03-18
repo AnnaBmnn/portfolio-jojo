@@ -55,8 +55,6 @@ import ProjectVibu from "@/components/ProjectVibu.vue";
 import ProjectOlympics from "@/components/ProjectOlympics.vue";
 import ProjectStuff from "@/components/ProjectStuff.vue";
 import NextProject from "@/components/NextProject.vue";
-import { nearer } from 'q';
-
 
 export default {
   name: "project",
@@ -68,14 +66,13 @@ export default {
     ProjectStuff,
     NextProject
   },
-  data: function(){
+  data: function() {
     return {
-      projectInfos: projects.find((project)=>{
+      projectInfos: projects.find(project => {
         return project.name == this.$route.params.slug;
-    })
-    }
-  },
-
+      })
+    };
+  }
 };
 </script>
 
@@ -91,24 +88,24 @@ export default {
   z-index: 0;
 
   @media screen and (max-width: 600px) {
-    padding: 30px 0px 50px 0
+    padding: 30px 0px 50px 0;
   }
 }
 .project__logo {
   position: absolute;
   left: 0%;
   top: 10vh;
-  margin-left: 1.9%;    
+  margin-left: 1.9%;
 
   @media screen and (max-width: 1000px) {
-    left: 0%;    
+    left: 0%;
   }
   @media screen and (max-width: 750px) {
-    width: 60px;    
+    width: 60px;
   }
   @media screen and (max-width: 600px) {
     margin-bottom: 30px;
-    width: 90px;    
+    width: 90px;
   }
 }
 .project__btn--back {
@@ -128,7 +125,7 @@ export default {
   padding: 50px 60px;
   width: 60%;
   margin: 0 auto;
-  border: 3px solid #0B3536;
+  border: 3px solid #0b3536;
   border-radius: 6px;
   background-color: white;
   &:after {
@@ -140,7 +137,7 @@ export default {
     height: 100%;
     width: 100%;
     border-radius: 6px;
-    background-color: #0B3536;
+    background-color: #0b3536;
   }
   @media screen and (max-width: 870px) {
     width: 50.5%;
@@ -149,9 +146,7 @@ export default {
     width: 100%;
     margin-top: 180px;
     padding: 50px 40px;
-
   }
-
 }
 .project__firstLine {
   display: flex;
@@ -159,10 +154,9 @@ export default {
   @media screen and (max-width: 1000px) {
     flex-direction: column;
   }
-  
 }
 .project__title {
-  font-family: 'integral cf';
+  font-family: "integral cf";
   line-height: 0.5;
   font-size: 5.4rem;
   @media screen and (max-width: 1200px) {
@@ -214,7 +208,6 @@ export default {
       margin-left: 15px;
       max-height: 60px;
       max-width: 60px;
-
     }
   }
   @media screen and (max-width: 1050px) {
@@ -249,26 +242,25 @@ export default {
     width: 90%;
     margin-left: 0%;
     margin: 0 auto;
-
   }
 }
 .project__infoKey {
-  font-family: 'avenir';
+  font-family: "avenir";
   font-style: italic;
   font-weight: 900;
   text-transform: uppercase;
   line-height: 1;
   font-size: 0.93rem;
-  color: #F54123;
+  color: #f54123;
 }
 .project__infoContent {
   margin-top: 15px;
-  font-family: 'Avenir';
+  font-family: "Avenir";
   font-style: italic;
   font-weight: 900;
   line-height: 1.06rem;
   font-size: 0.875rem;
-  color: #0B3536;
+  color: #0b3536;
   @media screen and (max-width: 730px) {
     margin-top: 10px;
   }
@@ -279,7 +271,7 @@ export default {
   top: 60vh;
   width: 200px;
   // transform: translateY(30%);
-  display: block!important;
+  display: block !important;
   left: 8.5%;
   .waves--1 {
     transform: translate3d(0%, 0%, 1px);
@@ -287,7 +279,7 @@ export default {
   }
   .waves--2 {
     transform: translate3d(100%, 0%, 1px);
-    animation: waveItDeux 3s linear infinite ;
+    animation: waveItDeux 3s linear infinite;
   }
 }
 </style>

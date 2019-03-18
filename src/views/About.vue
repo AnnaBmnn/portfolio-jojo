@@ -74,16 +74,16 @@ export default {
     TiredToSee,
     Eyes
   },
-  props: {
-  },
+  props: {},
   methods: {
     moveEyes: function(event) {
       // pass event object, bound to mouse move with updat
       const eyes1 = document.querySelector("#eyes_1");
       const eyes2 = document.querySelector("#eyes_2");
-      eyes1.style.transform = `translate3d(${event.clientX*0.018}%, ${event.clientY*0.075}%,1px)`;
-      eyes2.style.transform = `translate3d(${event.clientX*0.018}%, ${event.clientY*0.075}%,1px)`;
-
+      eyes1.style.transform = `translate3d(${event.clientX *
+        0.018}%, ${event.clientY * 0.075}%,1px)`;
+      eyes2.style.transform = `translate3d(${event.clientX *
+        0.018}%, ${event.clientY * 0.075}%,1px)`;
     }
   }
 };
@@ -91,7 +91,7 @@ export default {
 <style lang="scss" scoped>
 .container {
   @media screen and (max-width: 600px) {
-    padding: 30px 0px 50px 0
+    padding: 30px 0px 50px 0;
   }
   .hoverImage__word {
     margin-bottom: 0;
@@ -101,17 +101,17 @@ export default {
   position: absolute;
   left: 1.9%;
   top: 10vh;
-  margin-left: 0%;    
+  margin-left: 0%;
 
   @media screen and (max-width: 1000px) {
-    left: 0%;    
+    left: 0%;
   }
   @media screen and (max-width: 750px) {
-    width: 60px;    
+    width: 60px;
   }
   @media screen and (max-width: 600px) {
     margin-bottom: 30px;
-    width: 90px;    
+    width: 90px;
   }
 }
 .about__btnContainer {
@@ -139,7 +139,8 @@ export default {
     margin-top: 180px;
   }
 }
-.wassup__txt, .wassup__me {
+.wassup__txt,
+.wassup__me {
   width: 50%;
   @media screen and (max-width: 900px) {
     width: 100%;
@@ -167,10 +168,10 @@ export default {
     left: unset;
     right: 0;
     transform: translate3d(0, 0, 1px);
-
   }
 }
-.everyWhere__socials, .everyWhere__eyes {
+.everyWhere__socials,
+.everyWhere__eyes {
   width: 50%;
   font-size: 0.875rem;
   box-sizing: border-box;
@@ -179,7 +180,6 @@ export default {
     margin-left: 35%;
     @media screen and (max-width: 900px) {
       margin-left: 15%;
-
     }
   }
   span {
@@ -195,14 +195,14 @@ export default {
     margin-bottom: 6px;
     position: relative;
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       width: 99%;
       height: 3px;
       border-radius: 3px;
       top: 100%;
       left: 0;
-      background-color: #F54123;
+      background-color: #f54123;
     }
   }
 }
@@ -212,7 +212,7 @@ export default {
   padding-left: 0;
 }
 .wassup__title {
-  font-family: 'integral cf';
+  font-family: "integral cf";
   font-style: unset;
   font-size: 2.5rem;
   @media screen and (max-width: 900px) {
@@ -220,4 +220,3 @@ export default {
   }
 }
 </style>
-

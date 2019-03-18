@@ -8,7 +8,6 @@
 </template>
 
 <script>
-
 export default {
   name: "HoverImage",
   props: {
@@ -22,11 +21,10 @@ export default {
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped lang="scss">
 .tiredToSee__luv {
-
   .hoverImage__word:hover .hoverImage__myImg {
-      top: unset;
-      bottom: 370%!important;
-      left: -290%!important;
+    top: unset;
+    bottom: 370% !important;
+    left: -290% !important;
   }
 }
 .hoverImage__word {
@@ -35,13 +33,13 @@ export default {
   margin-bottom: 6px;
   position: relative;
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 3px;
     top: 90%;
     left: 0;
-    background-color: #F54123;
+    background-color: #f54123;
     border-radius: 3px;
   }
   .hoverImage__myImg {
@@ -51,17 +49,17 @@ export default {
     left: 0;
     transform: translate3d(-50%, 0, 1px);
     border-radius: 6px;
-    border: 3px solid #F54123;
+    border: 3px solid #f54123;
     height: 220px;
     z-index: 3;
 
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       width: 100%;
       height: 100%;
       border-radius: 6px;
-      background-color: #F54123;
+      background-color: #f54123;
       left: 16px;
       top: 16px;
       z-index: -1;
@@ -75,10 +73,10 @@ export default {
     }
   }
   &:hover {
-    cursor: url('~@/assets/img/about/cursor.svg'), auto;
+    cursor: url("~@/assets/img/about/cursor.svg"), auto;
     .hoverImage__myImg {
       display: block;
-    }	
+    }
   }
 }
 </style>

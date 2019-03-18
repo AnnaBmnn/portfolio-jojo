@@ -6,8 +6,7 @@
 <script>
 export default {
   name: "Aouuurd",
-  props: {
-  }
+  props: {}
 };
 </script>
 
@@ -16,13 +15,13 @@ export default {
 .aouuurd {
   animation: rotateIt 12s linear infinite;
 }
-.cls-1,.cls-2{
-  font-size:9.8px;
-  fill:#0b3536;
+.cls-1,
+.cls-2 {
+  font-size: 9.8px;
+  fill: #0b3536;
 }
-// .cls-1{ 
+// .cls-1{
 //   font-family:'integral cf';
 // }
 // .cls-2{font-family:'integral cf';}
-
 </style>

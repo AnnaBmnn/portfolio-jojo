@@ -76,23 +76,23 @@ export default {
 <style scoped lang="scss">
 .card {
   border-radius: 6px;
-  border: 3px solid #0B3536;
+  border: 3px solid #0b3536;
   position: relative;
   width: 35%;
   background-color: white;
   height: fit-content;
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
     border-radius: 6px;
-    background-color: #0B3536;
+    background-color: #0b3536;
     left: 24px;
     top: 24px;
     z-index: -1;
   }
-  &:last-child{
+  &:last-child {
     margin-right: 8%;
   }
   @media screen and (max-width: 1000px) {
@@ -115,7 +115,7 @@ export default {
   font-weight: bold;
   padding: 20px 0 28px;
   text-transform: uppercase;
-  border-bottom: 3px solid #0B3536;
+  border-bottom: 3px solid #0b3536;
   font-family: "integral cf", Helvetica, Arial, sans-serif;
   @media screen and (max-height: 600px) {
     padding: 17px 0;
@@ -126,18 +126,16 @@ export default {
   }
   @media screen and (max-width: 750px) {
     font-size: 1.12rem;
-
   }
   @media screen and (max-width: 600px) {
     font-size: 2rem;
-
   }
 
   &.orange {
-    background-color: #F54123;
+    background-color: #f54123;
   }
   &.blue {
-    background-color: #0098D8;
+    background-color: #0098d8;
   }
 }
 .project__container {
@@ -150,7 +148,6 @@ export default {
   }
   @media screen and (max-width: 600px) {
     padding: 30px 0px 0;
-    
   }
 }
 .project__line {
@@ -181,7 +178,6 @@ export default {
       width: 60px;
       height: 60px;
       margin-bottom: 15px;
-
     }
     @media screen and (max-width: 750px) {
       width: 40px;
@@ -208,11 +204,9 @@ export default {
   padding: 50px 60px;
   @media screen and (max-width: 1000px) {
     padding: 30px 40px;
-    
   }
   @media screen and (max-width: 750px) {
     padding: 30px 30px;
-    
   }
 }
 .about__txt {
@@ -227,12 +221,12 @@ export default {
   }
 }
 .about__btn {
-  color: #F54123;
-  border: 3px solid #F54123;
+  color: #f54123;
+  border: 3px solid #f54123;
   background-color: white;
   border-radius: 6px;
   padding: 15px 15px;
-  font-family: 'integral cf';
+  font-family: "integral cf";
   font-size: 0.875rem;
   text-transform: uppercase;
   font-weight: bold;
@@ -241,14 +235,13 @@ export default {
     z-index: -1;
     content: "";
     position: absolute;
-    border: 3px solid #F54123;
+    border: 3px solid #f54123;
     width: 100%;
     height: 100%;
     left: 5px;
     top: 5px;
-    background-color: #F54123;
+    background-color: #f54123;
     border-radius: 6px;
   }
 }
-
 </style>
