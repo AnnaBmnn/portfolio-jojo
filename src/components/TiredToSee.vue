@@ -29,8 +29,8 @@
                     <img class="game__poigne--2" src="../assets/img/about/poigne2.svg">
                 </div>
             </div>
-            <div class="tiredToSee__button--mobile">
-                <div class="tiredToSee__buttonContainer">
+            <div class="tiredToSee__button--mobile"  >
+                <div class="tiredToSee__buttonContainer" @click="animateGame">
                     <img class="tiredToSee__buttonImg" src="../assets/img/about/buttonAbout.svg">
                     <img class="tiredToSee__holeImg" src="../assets/img/about/hole.svg">
                 </div>
@@ -90,26 +90,32 @@ export default {
     return {
       tl1: "",
       tl2: "",
-      timeOut1: "",      
-      timeOut2: "",      
+      timeOut1: "",
+      timeOut2: ""
     };
   },
   props: {},
   methods: {
-    stopRandomly: function(gameTxt){
-      const randomNumber = Math.floor(Math.random() * Math.floor(gameTxt.length));
-      
+    stopRandomly: function(gameTxt) {
+      const randomNumber = Math.floor(
+        Math.random() * Math.floor(gameTxt.length)
+      );
+
       const timeLine = new TimelineMax();
       timeLine
-        .fromTo(gameTxt[randomNumber], 0.075,{ transform: "translateY(-100%)" }, { transform: "translateY(0%)" } )
+        .fromTo(
+          gameTxt[randomNumber],
+          0.075,
+          { transform: "translateY(-100%)" },
+          { transform: "translateY(0%)" }
+        )
         .play();
-
     },
     animateGame: function() {
-      const gameWheel1 = document.querySelector('.game__container--1'); 
-      const gameTxt1 = gameWheel1.querySelectorAll('.game__phrase');
-      const gameWheel2 = document.querySelector('.game__container--2'); 
-      const gameTxt2 = gameWheel2.querySelectorAll('.game__phrase');
+      const gameWheel1 = document.querySelector(".game__container--1");
+      const gameTxt1 = gameWheel1.querySelectorAll(".game__phrase");
+      const gameWheel2 = document.querySelector(".game__container--2");
+      const gameTxt2 = gameWheel2.querySelectorAll(".game__phrase");
       const delay = 0.15;
       const duration = 0.15;
       // const stop1 = 300;
@@ -119,14 +125,26 @@ export default {
       this.tl1.eventCallback("onComplete", this.stopRandomly, [gameTxt1], this);
       this.tl1.repeat(0.5);
       this.tl1
-        .staggerFromTo(gameTxt1, duration, { transform: "translateY(-100%)" }, { transform: "translateY(100%)" }, delay )
+        .staggerFromTo(
+          gameTxt1,
+          duration,
+          { transform: "translateY(-100%)" },
+          { transform: "translateY(100%)" },
+          delay
+        )
         .play();
 
       this.tl2 = new TimelineMax();
       this.tl2.eventCallback("onComplete", this.stopRandomly, [gameTxt2], this);
       this.tl2.repeat(1.5);
       this.tl2
-        .staggerFromTo(gameTxt2, duration, { transform: "translateY(-100%)" }, { transform: "translateY(100%)" }, delay)
+        .staggerFromTo(
+          gameTxt2,
+          duration,
+          { transform: "translateY(-100%)" },
+          { transform: "translateY(100%)" },
+          delay
+        )
         .play();
 
       // this.timeOut1 = setTimeout(()=>{
@@ -138,9 +156,7 @@ export default {
       // }, stop2);
     }
   },
-  mounted(){
-
-  }
+  mounted() {}
 };
 </script>
 
