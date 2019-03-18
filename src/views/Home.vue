@@ -128,22 +128,13 @@ export default {
       width: 90%;
     }
   }
-  @media screen and (max-width: 900px) {
-    .card {
-      width: 100%;
-    }
-  }
+
   @media screen and (max-width: 750px) {
     .card {
       width: 90%;
     }
   }
-  @media screen and (max-width: 750px) {
-    width: 100%;
-    .card {
-      width: 100%;
-    }
-  }
+
 }
 
 .aouuuuuards {

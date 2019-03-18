@@ -36,6 +36,8 @@ $orange: #f54123;
   will-change: transform;
   transform: translate3d(0, 0, 1px);
   transition: 0.3s ease-in-out transform;
+  cursor: url("~@/assets/img/commun/hover.svg"), auto;
+
   &:hover {
     transform: translate3d(8px, 8px, 1px);
   }

@@ -5,22 +5,34 @@ $orange: #F54123;
   -moz-osx-font-smoothing: grayscale;
   color: #0B3536;
   background-color: #E5E7DE;
+  cursor: url("~@/assets/img/commun/normal.svg") , auto;
+
 }
 body {
   overflow-x: hidden;
+  cursor: url("~@/assets/img/commun/normal.svg"), auto;
+
+
 }
 body, h1, h2, h3, div, span {
   margin: 0;
   padding: 0;
+  cursor: url("~@/assets/img/commun/normal.svg") 10 0, auto;
+
+  
+
 }
 a {
   text-decoration: none;
+  cursor: url("~@/assets/img/commun/hover.svg") , auto;
 }
 #nav {
   padding: 30px;
   a {
     font-weight: bold;
     color: #0B3536;
+    cursor: url("~@/assets/img/commun/hover.svg"), auto;
+
     &.router-link-exact-active {
       color: #42b983;
     }
