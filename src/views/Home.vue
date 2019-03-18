@@ -176,6 +176,10 @@ export default {
   font-weight: 900;
   font-style: italic;
   z-index: 4;
+  .dropALine__img {
+    height: 100px;
+    width: 150px;
+  }
   .dropALine__img svg {
     height: 100px;
     width: 150px;
@@ -186,7 +190,7 @@ export default {
     font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: bold;
-    cursor: pointer;
+    cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
   }
   a {
     color: #0b3536;
@@ -225,11 +229,11 @@ export default {
   }
   .waves--1 {
     transform: translate3d(0%, 0%, 1px);
-    animation: waveItUn 3s linear infinite;
+    animation: waveItUn 8s linear infinite;
   }
   .waves--2 {
     transform: translate3d(100%, 0%, 1px);
-    animation: waveItDeux 3s linear infinite;
+    animation: waveItDeux 8s linear infinite;
   }
   @media screen and (max-width: 1150px) {
     display: none;

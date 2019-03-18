@@ -67,7 +67,6 @@ export default {
         this.anim.play();
       }
       if (this.lastScroll > window.scrollY) {
-        console.log("rever");
         this.anim.setSpeed(-1);
         this.anim.play();
       }

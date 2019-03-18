@@ -71,11 +71,11 @@ export default {
   width: 165px;
   .waves--1 {
     transform: translate3d(0%, 0%, 1px);
-    animation: waveItUn 3s linear infinite;
+    animation: waveItUn 8s linear infinite;
   }
   .waves--2 {
     transform: translate3d(100%, 0%, 1px);
-    animation: waveItDeux 3s linear infinite;
+    animation: waveItDeux 8s linear infinite;
   }
 }
 .skills {

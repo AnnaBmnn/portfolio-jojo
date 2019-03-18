@@ -19,12 +19,13 @@
                         <div class="game__phrase">websites that transform your PC into a steam iron</div> -->
                     </div>                    
                 </div>
-                <div class="game__card">
+                <div class="game__card game__container--3">
                     <div class="game__container">
+                        <div class="game__phrase red">THEN CONTACT ME</div>
                         <div class="game__phrase red">THEN CONTACT ME</div>
                     </div>                    
                 </div>
-                <div class="game__poigne" @mouseenter="animateGame" >
+                <div class="game__poigne" @click="animateGame" >
                     <img class="game__poigne--1" src="../assets/img/about/poigne1.svg">
                     <img class="game__poigne--2" src="../assets/img/about/poigne2.svg">
                 </div>
@@ -90,8 +91,7 @@ export default {
     return {
       tl1: "",
       tl2: "",
-      timeOut1: "",
-      timeOut2: ""
+      tl3: ""
     };
   },
   props: {},
@@ -116,10 +116,10 @@ export default {
       const gameTxt1 = gameWheel1.querySelectorAll(".game__phrase");
       const gameWheel2 = document.querySelector(".game__container--2");
       const gameTxt2 = gameWheel2.querySelectorAll(".game__phrase");
+      const gameWheel3 = document.querySelector(".game__container--3");
+      const gameTxt3 = gameWheel3.querySelectorAll(".game__phrase");
       const delay = 0.15;
       const duration = 0.15;
-      // const stop1 = 300;
-      // const stop2 = 850;
 
       this.tl1 = new TimelineMax();
       this.tl1.eventCallback("onComplete", this.stopRandomly, [gameTxt1], this);
@@ -147,13 +147,19 @@ export default {
         )
         .play();
 
-      // this.timeOut1 = setTimeout(()=>{
-      //   this.tl1.stop();
-      // }, stop1);
+      this.tl3 = new TimelineMax();
+      this.tl3.eventCallback("onComplete", this.stopRandomly, [gameTxt3], this);
+      this.tl3.repeat(2.5);
+      this.tl3
+        .staggerFromTo(
+          gameTxt3,
+          duration,
+          { transform: "translateY(-100%)" },
+          { transform: "translateY(100%)" },
+          delay
+        )
+        .play();
 
-      // this.timeOut2 = setTimeout(()=>{
-      //   this.tl2.stop();
-      // }, stop2);
     }
   },
   mounted() {}
@@ -436,12 +442,12 @@ export default {
   left: 50%;
   transform: translate3d(-50%, 0, 1px);
   transition: 0.3s ease-in transform;
-  cursor: url("~@/assets/img/commun/hover.svg"), auto;
+  cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
 
   z-index: 10;
   &:hover {
     transform: translate3d(-50%, 3px, 1px);
-    cursor: url("~@/assets/img/commun/hover.svg"), auto;
+    cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
   }
 }
 .tiredToSee__holeImg {
@@ -480,7 +486,7 @@ export default {
 
 
   &:hover {
-    cursor: url("~@/assets/img/commun/hover.svg"), auto;
+    cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
     transform: translate3d(-3px, -100%, 1px) rotateX(15deg);
   }
   @media screen and (max-width: 600px) {

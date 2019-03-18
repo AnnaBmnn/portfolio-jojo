@@ -1,10 +1,12 @@
 import Vue from "vue";
 import Router from "vue-router";
 import Home from "./views/Home.vue";
+import VueAnalytics from "vue-analytics";
+
 
 Vue.use(Router);
 
-export default new Router({
+const router = new Router({
   routes: [
     {
       path: "/",
@@ -38,3 +40,15 @@ export default new Router({
     return { x: 0, y: 0 };
   }
 });
+
+// Vue.use(VueAnalytics, {
+//   // this one of course needs to me a real domain ID
+//   id: ,
+//   // use the `router` instance here
+//   router,
+//   debug: {
+//     // enabled: true
+//   }
+// });
+
+export default router;
