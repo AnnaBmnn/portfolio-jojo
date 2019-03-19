@@ -482,7 +482,7 @@ export default {
   z-index: 7;
   transition: 0.3s transform ease-in-out;
   transform-origin: bottom;
-  cursor: url("~@/assets/img/about/cursor.svg"), auto;
+  cursor: url("~@/assets/img/commun/normal.svg"), auto;
 
 
   &:hover {
@@ -504,8 +504,6 @@ export default {
     color: #f54123;
   }
   .game__container {
-    // display: flex;
-    // flex-direction: column;
     height: 130px;
     width: 100%;
     position: relative;
@@ -514,6 +512,8 @@ export default {
       position: absolute;
       top: 0;
       left: 0;
+      box-sizing: border-box;
+      padding: 11px;
       text-transform: uppercase;
       height: 130px;
       text-align: center;
