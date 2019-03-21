@@ -69,6 +69,9 @@ export default {
   overflow: hidden;
   height: 85px;
   width: 165px;
+  @media screen and (max-width: 750px) {
+    display: none;
+  }
   .waves--1 {
     transform: translate3d(0%, 0%, 1px);
     animation: waveItUn 8s linear infinite;
