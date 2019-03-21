@@ -168,7 +168,7 @@ export default {
     transform: translate3d(-41%, -49%, 1px);
   }
   @media screen and (max-width: 600px) {
-    top: 30px;
+    top: 10vh;
     right: 30px;
     left: unset;
     bottom: unset;
