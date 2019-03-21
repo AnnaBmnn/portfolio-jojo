@@ -73,7 +73,7 @@ export default {
     }
   }
   &:hover {
-    cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
+    // cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
     .hoverImage__myImg {
       display: block;
     }

@@ -442,12 +442,12 @@ export default {
   left: 50%;
   transform: translate3d(-50%, 0, 1px);
   transition: 0.3s ease-in transform;
-  cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
+  // cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
 
   z-index: 10;
   &:hover {
     transform: translate3d(-50%, 3px, 1px);
-    cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
+    // cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
   }
 }
 .tiredToSee__holeImg {
@@ -482,11 +482,11 @@ export default {
   z-index: 7;
   transition: 0.3s transform ease-in-out;
   transform-origin: bottom;
-  cursor: url("~@/assets/img/commun/normal.svg"), auto;
+  // cursor: url("~@/assets/img/commun/normal.svg"), auto;
 
 
   &:hover {
-    cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
+    // cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
     transform: translate3d(-3px, -100%, 1px) rotateX(15deg);
   }
   @media screen and (max-width: 600px) {

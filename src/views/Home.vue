@@ -190,7 +190,7 @@ export default {
     font-size: 0.875rem;
     text-transform: uppercase;
     font-weight: bold;
-    cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
+    // cursor: url("~@/assets/img/commun/hover.svg") 20 0, auto;
   }
   a {
     color: #0b3536;
