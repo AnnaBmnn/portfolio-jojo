@@ -89,8 +89,12 @@ export default {
   .cls-2 {
     font-family: "integral cf";
   }
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 1000px) {
     height: unset;
+    min-height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+
   }
 }
 .container {
@@ -124,14 +128,17 @@ export default {
     }
   }
   @media screen and (max-width: 1000px) {
+
     .card {
       width: 90%;
     }
   }
 
   @media screen and (max-width: 750px) {
+    margin-right: 0%;
+    width: 100%;
     .card {
-      width: 90%;
+      width: 100%;
     }
   }
 
@@ -245,7 +252,14 @@ export default {
   padding: 10vh 0 0 !important;
   background-color: #e5e7de;
   height: 100vh;
+  min-height: 100vh;
   box-sizing: border-box;
   overflow: hidden;
+  @media screen and (max-width: 1000px) {
+    height: unset;
+    overflow: auto;
+    min-height: 100vh;
+
+  }
 }
 </style>

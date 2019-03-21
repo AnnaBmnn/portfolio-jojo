@@ -271,8 +271,13 @@ export default {
   top: 60vh;
   width: 200px;
   // transform: translateY(30%);
-  display: block !important;
   left: 8.5%;
+  @media screen and (max-width: 730px) {
+    .waves {
+      display: none!important;
+
+    }
+  }
   .waves--1 {
     transform: translate3d(0%, 0%, 1px);
     animation: waveItUn 8s linear infinite;
