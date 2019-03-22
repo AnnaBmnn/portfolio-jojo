@@ -4,6 +4,11 @@
       <router-link class="logo"   to="/">
         <img src="../assets/img/logo.svg">
       </router-link>
+      <div class="aouuuuuards">
+        <img src="../assets/img/home/ok.svg" class="aouuuuuards__contour"/>
+        <!-- <aouuurd class="aouuuuuards__contour"/> -->
+        <img class="aouuuuuards__hand"  src="../assets/img/home/handok.svg">
+      </div>
       <card
         :colorClass="cardsArray[0]"
         :isProject="true"
@@ -29,11 +34,7 @@
         </div>
     </div>
     </div>
-    <div class="aouuuuuards">
-      <img src="../assets/img/home/ok.svg" class="aouuuuuards__contour"/>
-      <!-- <aouuurd class="aouuuuuards__contour"/> -->
-      <img class="aouuuuuards__hand"  src="../assets/img/home/handok.svg">
-    </div>
+
 
   </div>
 </template>
@@ -102,7 +103,7 @@ export default {
   position: relative;
   z-index: 1;
   width: 90%;
-  max-width: 1400px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 10vh 0;
   display: flex;
@@ -147,12 +148,13 @@ export default {
 
 .aouuuuuards {
   position: absolute;
-  left: 5%;
+  left: 0%;
   bottom: 5vh;
   height: 117px;
   width: 117px;
   z-index: 5;
   overflow: hidden;
+  transform: translateX(2%);
   .aouuuuuards__contour {
     width: 117px;
     height: 117px;
