@@ -102,6 +102,7 @@ export default {
   position: relative;
   z-index: 1;
   width: 90%;
+  max-width: 1400px;
   margin: 0 auto;
   padding: 10vh 0;
   display: flex;

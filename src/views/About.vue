@@ -28,7 +28,7 @@
             So I decided to learn and experiment on my side. 
             <br>
             <br>
-            I’m looking for a 6 months internship in a <hover-image word="cool place" link="https://www.dogstudio.co/" imgUrl="https://media.giphy.com/media/N3SrQHIh87mJq/giphy.gif" />
+            I’m looking for a 6 months internship in a <hover-image word="cool place"  imgUrl="https://media.giphy.com/media/N3SrQHIh87mJq/giphy.gif" />
             where I can discover things and improve my skills in this areas. 
         </div>
         <div class="wassup__everyWhere">
