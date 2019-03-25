@@ -41,14 +41,14 @@ const router = new Router({
   }
 });
 
-// Vue.use(VueAnalytics, {
-//   // this one of course needs to me a real domain ID
-//   id: ,
-//   // use the `router` instance here
-//   router,
-//   debug: {
-//     // enabled: true
-//   }
-// });
+Vue.use(VueAnalytics, {
+  // this one of course needs to me a real domain ID
+  id: 'UA-136782028-1',
+  // use the `router` instance here
+  router,
+  debug: {
+    // enabled: true
+  }
+});
 
 export default router;
