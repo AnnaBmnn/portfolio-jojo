@@ -12,30 +12,31 @@
     <div class="project__container" v-show="isProject">
       <div class="project__line">
         <div class="project">
+          <router-link class="project__link" to="/project/stuff">
+            <img class="project__img" src="../assets/img/home/poo.svg"/>
+            <span class="project__title">stuff</span>
+          </router-link>                    
+        </div>
+        <div class="project">
           <router-link class="project__link" to="/project/vibu">
             <img class="project__img" src="../assets/img/home/vibu.svg"/>
             <span class="project__title">vibu</span>
           </router-link>
         </div>
+
+      </div>
+      <div class="project__line">
         <div class="project">
           <router-link class="project__link" to="/project/tesla">
             <img class="project__img" src="../assets/img/home/tyre.svg"/>
             <span class="project__title">tesla</span>
           </router-link>
         </div>
-      </div>
-      <div class="project__line">
         <div class="project">
           <router-link class="project__link" to="/project/olympics">
             <img class="project__img" src="../assets/img/home/ball.svg"/>
             <span class="project__title">olympics</span>
           </router-link>          
-        </div>
-        <div class="project">
-          <router-link class="project__link" to="/project/stuff">
-            <img class="project__img" src="../assets/img/home/poo.svg"/>
-            <span class="project__title">stuff</span>
-          </router-link>                    
         </div>
       </div>
     </div>

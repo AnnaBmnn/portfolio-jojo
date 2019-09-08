@@ -12,24 +12,24 @@
           </h1>
         </div>
         <div class="wassup__txt">
-          
-            I’m Johanna Nguyen,
-            a junior web and graphic designer.
-            <br>
-            <br>
-            I’m studying at <hover-image word="HETIC" link="https://www.hetic.net/" imgUrl="https://media.giphy.com/media/1IDqrFySO6y1a/giphy.gif" /> in Paris, a web school 
-            where I discovered UI and UX. In this way, I 
-            worked at <hover-image word="Dogstudio" link="https://www.dogstudio.co/" imgUrl="https://66.media.tumblr.com/e1f66daca1a4dd8fd156ef3aa499d34b/tumblr_inline_msn9qyKvTO1qz4rgp.gif"/> during my last summer internship.
-            <br>
-            <br>
-            In the same time I started to take an interest in a more global 
-            form of design: graphic, motion and print. 
-            And today, I really want to make this curosity my profession.
-            So I decided to learn and experiment on my side. 
-            <br>
-            <br>
-            I’m looking for a 6 months internship in a <hover-image word="cool place"  imgUrl="https://media.giphy.com/media/N3SrQHIh87mJq/giphy.gif" />
-            where I can discover things and improve my skills in this areas. 
+          I’m Johanna Nguyen, a junior digital and graphic designer.
+          <br>
+          <br>
+          I’m studying at <hover-image word="HETIC" link="https://www.hetic.net/" imgUrl="https://media.giphy.com/media/1IDqrFySO6y1a/giphy.gif" /> 
+          in Paris, a web school where I discovered UI and UX.
+          <br>
+          <br>
+          In the same time I started to take an interest in another 
+          form of design, centered on graphic and motion. So I decided 
+          to learn and experiment on my side. In this way, I worked at 
+          <hover-image word="Wedge" link="https://www.wedge.work/" imgUrl="https://68.media.tumblr.com/fe5b83ba5f0af592ca693dd3eaa19c04/tumblr_ogbwg016mT1u1mgryo1_400.gif"/>
+          during my last internship.
+          <br>
+          <br>
+          So I’m looking for a block-release training in a 
+          <hover-image word="cool place"  imgUrl="https://media.giphy.com/media/N3SrQHIh87mJq/giphy.gif" />
+          in Paris, starting in January 2020, where I can discover things 
+          and improve my skills in this areas.
         </div>
         <div class="wassup__everyWhere">
           <div class="everyWhere__eyes">
@@ -38,10 +38,10 @@
           </div>
           <ul class="everyWhere__socials">
             <span>I’M EVERYWHERE</span>
+            <li><a target="_blank" href="https://www.instagram.com/nguyen.again/">Instagram</a></li>
             <li><a target="_blank" href="https://dribbble.com/johannanguyen">Dribbble</a></li>
             <li><a target="_blank" href="https://www.behance.net/johannanguyen">Behance</a></li>
             <li><a target="_blank" href="https://www.linkedin.com/in/johanna-nguyen/">Linkedin</a></li>
-            <li><a target="_blank" href="https://www.instagram.com/nguyen.again/">Instagram</a></li>
           </ul>
         </div>
 

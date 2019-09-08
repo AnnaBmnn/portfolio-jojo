@@ -73,16 +73,20 @@ const projects = [
     txt:
       "Here is a series of things I do in my spare time. I try to experiment with different fields, media and techniques. ",
     imgs: [
-      "../assets/project/stuff/stuff_1.png",
-      "../assets/project/stuff/stuff_2.png",
-      "../assets/project/stuff/stuff_3.gif",
-      "../assets/project/stuff/stuff_4.gif",
-      "../assets/project/stuff/stuff_5.png",
-      "../assets/project/stuff/stuff_6.png",
-      "../assets/project/stuff/stuff_7.gif",
-      "../assets/project/stuff/stuff_8.gif",
-      "../assets/project/stuff/stuff_9.png",
-      "../assets/project/stuff/stuff_10.jpg"
+      "../assets/project/stuff/stuff_1.png", // 0
+      "../assets/project/stuff/stuff_2.png", // 1
+      "../assets/project/stuff/stuff_3.gif", // 2
+      "../assets/project/stuff/stuff_4.gif", // 3
+      "../assets/project/stuff/stuff_5.png", // 4
+      "../assets/project/stuff/stuff_6.png", // 5
+      "../assets/project/stuff/stuff_7.gif", // 6
+      "../assets/project/stuff/stuff_8.gif", // 7
+      "../assets/project/stuff/stuff_9.png", // 8
+      "../assets/project/stuff/stuff_10.jpg", // 9
+      "../assets/project/stuff/exploring.png", // 10
+      "../assets/project/stuff/modern_explorer_b.png", // 11
+      "../assets/project/stuff/piknic.png", // 12
+      "../assets/project/stuff/sticker.png" // 13
     ]
   }
 ];
